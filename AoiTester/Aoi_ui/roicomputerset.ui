@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>roiComputerSet</class>
+ <widget class="QDialog" name="roiComputerSet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>893</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图层管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="msgShow">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>图层及算子测试</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" columnstretch="5,1,3,1">
+      <item row="0" column="0" rowspan="2">
+       <widget class="QTableWidget" name="CouldList"/>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="delCould">
+          <property name="text">
+           <string>删除选中</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="SelectedCE">
+          <property name="text">
+           <string>点云选中</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="UnSelected">
+          <property name="text">
+           <string>取消选中</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pcHidden">
+          <property name="text">
+           <string>选中隐藏</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pcShow">
+          <property name="text">
+           <string>选中显示</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <widget class="QListWidget" name="toolKitList"/>
+      </item>
+      <item row="0" column="3">
+       <widget class="QTextEdit" name="algParams"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="algTestButton">
+        <property name="text">
+         <string>选中算子测试</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Roi区</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="roiList"/>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="relRoiConvert">
+          <property name="text">
+           <string>相对转换</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="absRoiConvert">
+          <property name="text">
+           <string>绝对转换</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clrBtn">
+          <property name="text">
+           <string>清空ROI</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="removeRoi">
+          <property name="text">
+           <string>删除选中</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="LookSelected">
+          <property name="text">
+           <string>ROI重框</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="roiUnSelected">
+          <property name="text">
+           <string>ROI取消</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="roiOK">
+          <property name="text">
+           <string>ROI拾取</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RoiLabelName">
+          <property name="text">
+           <string>ROI名称:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="roiName"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

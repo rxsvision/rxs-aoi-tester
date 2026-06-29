@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphicalSegmentationDlg</class>
+ <widget class="QDialog" name="GraphicalSegmentationDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>309</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Segmentation</string>
+  </property>
+  <layout class="QHBoxLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QToolButton" name="pauseButton">
+     <property name="toolTip">
+      <string>Pause segmentation (Space)</string>
+     </property>
+     <property name="statusTip">
+      <string>Pause segmentation  (allow rotation/panning of 3D view)</string>
+     </property>
+     <property name="text">
+      <string>暂停</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallPause.png</normaloff>:/CC/images/smallPause.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="selectionModelButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>多边形选取模式 (Tab)</string>
+     </property>
+     <property name="text">
+      <string>多边形选取</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallPolygonSelect.png</normaloff>:/CC/images/smallPolygonSelect.png</iconset>
+     </property>
+     <property name="popupMode">
+      <enum>QToolButton::MenuButtonPopup</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="BpFound">
+     <property name="toolTip">
+      <string>寻找ROI框选中的边界点(左)</string>
+     </property>
+     <property name="text">
+      <string>边界寻找</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/search.svg</normaloff>:/CC/images/search.svg</iconset>
+     </property>
+     <property name="popupMode">
+      <enum>QToolButton::MenuButtonPopup</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="outButton">
+     <property name="toolTip">
+      <string>选中框选内容 (O)</string>
+     </property>
+     <property name="statusTip">
+      <string>Segment (keep points outside)</string>
+     </property>
+     <property name="text">
+      <string>out</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallSegmentOut.png</normaloff>:/CC/images/smallSegmentOut.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="razButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>清除框选分段</string>
+     </property>
+     <property name="statusTip">
+      <string>Clear segmentation</string>
+     </property>
+     <property name="text">
+      <string>raz</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallReset.png</normaloff>:/CC/images/smallReset.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="validButton">
+     <property name="toolTip">
+      <string>确定框选内容进行分割裁切成新的点云 (Enter)</string>
+     </property>
+     <property name="statusTip">
+      <string>Confirm segmentation</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallValidate.png</normaloff>:/CC/images/smallValidate.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="validAndDeleteButton">
+     <property name="toolTip">
+      <string>确认删除框选选中的点集合 (Del)</string>
+     </property>
+     <property name="statusTip">
+      <string>Confirm and delete hidden points</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallTrash.png</normaloff>:/CC/images/smallTrash.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="cancelButton">
+     <property name="toolTip">
+      <string>取消退出(Esc)</string>
+     </property>
+     <property name="statusTip">
+      <string>Cancel segentation</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icones.qrc">
+       <normaloff>:/CC/images/smallCancel.png</normaloff>:/CC/images/smallCancel.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionSetRectangularSelection">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/smallRectangleSelect.png</normaloff>:/CC/images/smallRectangleSelect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rectangular selection</string>
+   </property>
+   <property name="toolTip">
+    <string>Activates rectangular selection</string>
+   </property>
+  </action>
+  <action name="actionSetPolylineSelection">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/smallPolygonSelect.png</normaloff>:/CC/images/smallPolygonSelect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Polygonal selection</string>
+   </property>
+   <property name="toolTip">
+    <string>Activaites polyline selection</string>
+   </property>
+  </action>
+  <action name="actionUseExistingPolyline">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/dbPolylineSymbol.png</normaloff>:/CC/images/dbPolylineSymbol.png</iconset>
+   </property>
+   <property name="text">
+    <string>Use existing polyline</string>
+   </property>
+   <property name="toolTip">
+    <string>Import polyline from DB for segmentation</string>
+   </property>
+  </action>
+  <action name="actionExportSegmentationPolyline">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccSave.png</normaloff>:/CC/images/ccSave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export segmentation polyline</string>
+   </property>
+   <property name="toolTip">
+    <string>Export segmentation polyline as new entity</string>
+   </property>
+  </action>
+  <action name="actionLeftp">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/line_start.ico</normaloff>:/CC/images/line_start.ico</iconset>
+   </property>
+   <property name="text">
+    <string>左点查找</string>
+   </property>
+   <property name="toolTip">
+    <string>寻找左边点</string>
+   </property>
+  </action>
+  <action name="actionRightp">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/line_stop.ico</normaloff>:/CC/images/line_stop.ico</iconset>
+   </property>
+   <property name="text">
+    <string>右点查找</string>
+   </property>
+   <property name="toolTip">
+    <string>寻找右侧点</string>
+   </property>
+  </action>
+  <action name="actionRoiPS">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/focus_on.ico</normaloff>:/CC/images/focus_on.ico</iconset>
+   </property>
+   <property name="text">
+    <string>选框查看</string>
+   </property>
+   <property name="toolTip">
+    <string>在当前固定视角选框在视图中的位置</string>
+   </property>
+  </action>
+  <action name="actionPcSep">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/broadside.ico</normaloff>:/CC/images/broadside.ico</iconset>
+   </property>
+   <property name="text">
+    <string>框选点</string>
+   </property>
+   <property name="toolTip">
+    <string>得到框选区域点云的首末端点</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icones.qrc"/>
+ </resources>
+ <connections/>
+</ui>

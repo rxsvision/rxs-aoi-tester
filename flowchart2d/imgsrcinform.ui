@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImgSrcInForm</class>
+ <widget class="QWidget" name="ImgSrcInForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>329</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="2,1">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>输入参数</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0,0,0,0,0">
+      <item>
+       <widget class="QRadioButton" name="sdkin">
+        <property name="text">
+         <string>外部传入</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2,2">
+        <item>
+         <widget class="QRadioButton" name="sensor">
+          <property name="text">
+           <string>传感器输入</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cbSensorSelected"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="lightSource">
+        <property name="columnCount">
+         <number>4</number>
+        </property>
+        <column>
+         <property name="text">
+          <string>通道号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>开关</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>光色索引</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>光强值</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="locPic">
+        <property name="text">
+         <string>本地图片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="LocPicFile"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="selectFile">
+          <property name="text">
+           <string>加载文件</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="LocPicDir"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="selecteDir">
+          <property name="text">
+           <string>选择目录</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>输出参数</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="outGray">
+        <property name="text">
+         <string>灰度图输出</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="saveSrcPic">
+        <property name="text">
+         <string>输出保存</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="6,1">
+        <item>
+         <widget class="QLineEdit" name="savePath">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>保存路径</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LaseScaner</class>
+ <widget class="QDialog" name="LaseScaner">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>968</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>传感器操作</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4" rowstretch="1,1" columnstretch="1,1">
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>光源及焦距</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="7">
+         <widget class="QCheckBox" name="yellowChkbox">
+          <property name="text">
+           <string>黄光</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="Val_huanguang">
+          <property name="text">
+           <string>....</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3" colspan="8">
+         <widget class="QSlider" name="Slider_tongzhou">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QCheckBox" name="blueChkbox">
+          <property name="text">
+           <string>蓝光</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>多光谱分区</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="lsBSelected"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="Val_tongzhou">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QCheckBox" name="greenChkbox">
+          <property name="text">
+           <string>绿光</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QCheckBox" name="whiteChkbox">
+          <property name="text">
+           <string>白光</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="10">
+         <widget class="QCheckBox" name="uvChkbox">
+          <property name="text">
+           <string>紫外</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="9">
+         <widget class="QCheckBox" name="redChkboxW2">
+          <property name="text">
+           <string>红外2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QCheckBox" name="redChkboxW1">
+          <property name="text">
+           <string>红外1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3" colspan="8">
+         <widget class="QSlider" name="Slider_huangguang">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QCheckBox" name="redChkbox">
+          <property name="text">
+           <string>红光</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="adjfVal">
+          <property name="text">
+           <string>.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>调焦镜头</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3" colspan="8">
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="maximum">
+           <number>1023</number>
+          </property>
+          <property name="pageStep">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>同轴光光强</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>小环光光强</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" colspan="8">
+         <widget class="QSlider" name="Slider_duoguangpu">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="Val_duoguangpu">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>多光谱光强</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>传感器操作</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,5">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <item row="1" column="0" rowspan="4">
+       <widget class="QListWidget" name="sensorList"/>
+      </item>
+      <item row="3" column="1">
+       <layout class="QGridLayout" name="gridLayout" columnstretch="1,1,1,1,1,1,1">
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="Sample"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="CaptureMode"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="EncTabCB"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="Gain"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="EncDP">
+          <property name="text">
+           <string>5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="ExporTime"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>采集模式</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>触发模式</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="CollectionPointNum">
+          <property name="text">
+           <string>10000</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>增益</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>编码器间隔</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>曝光</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>采集数(点行)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>采样率</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="scanTigger">
+          <property name="text">
+           <string>采集测试</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QPushButton" name="GathPrev">
+          <property name="text">
+           <string>同步采集预览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="5">
+         <widget class="QPushButton" name="AutoLCIGrab">
+          <property name="text">
+           <string>多光谱测试</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="6">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>光强值</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="intensity"/>
+          </item>
+         </layout>
+        </item>
+        <item row="11" column="0" colspan="3">
+         <widget class="QLineEdit" name="ip_com"/>
+        </item>
+        <item row="11" column="3">
+         <widget class="QPushButton" name="cfgBower">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="3">
+         <widget class="QLineEdit" name="port_bit"/>
+        </item>
+        <item row="12" column="3">
+         <widget class="QPushButton" name="chwBower">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="Conn">
+          <property name="text">
+           <string>打开</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="CloseCon">
+          <property name="text">
+           <string>关闭</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>状态</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="openStatus">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QPushButton" name="conGraber">
+          <property name="text">
+           <string>连续采集</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="StopCollection">
+          <property name="text">
+           <string>停止采集</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QPushButton" name="crmGraber">
+          <property name="text">
+           <string>图片保存</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QPushButton" name="AutoLPGrab">
+          <property name="text">
+           <string>多光强测试</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6">
+         <widget class="QLineEdit" name="intensitys"/>
+        </item>
+        <item row="4" column="5" colspan="2">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>','逗号分隔的光强数据:如(255,10,20,40)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="4">
+         <widget class="QPushButton" name="paramSet">
+          <property name="text">
+           <string>设定</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="numZero">
+          <property name="text">
+           <string>数值归零</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QPushButton" name="dark">
+          <property name="text">
+           <string>Dark</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

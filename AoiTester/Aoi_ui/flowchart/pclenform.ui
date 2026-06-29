@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pcLenForm</class>
+ <widget class="QWidget" name="pcLenForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>359</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>边界点1Z</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>边界点2X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>边界点1X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>边界点1Y</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QCheckBox" name="isPrectid">
+       <property name="text">
+        <string>预测长度</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="Pz1"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="Px1"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>点云输入源:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="Px2"/>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>边界点2Y</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>方向选择:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>边界点2Z</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="Py2"/>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="Pz2"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="Py1"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="boundSrc">
+       <property name="text">
+        <string>固定边界点</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QComboBox" name="dirSelected">
+       <item>
+        <property name="text">
+         <string>X方向</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Y方向</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Z方向</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="3">
+      <widget class="QComboBox" name="boundLinker"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QCheckBox" name="condy">
+       <property name="text">
+        <string>落差向过滤</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" colspan="3">
+      <widget class="QLineEdit" name="preModein"/>
+     </item>
+     <item row="0" column="1" colspan="3">
+      <widget class="QComboBox" name="SelectLinker"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>测量结果</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="resultReport"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

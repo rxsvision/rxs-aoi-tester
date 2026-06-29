@@ -1,0 +1,20 @@
+1.1 打开vs命令行
+Developer Command Prompt for vsxxx
+Developer PowerShell for vsxxx
+
+
+1.2 命令行切换到libredwg-0.dll所在的目录，使用dumpbin工具生成def文件
+
+dumpbin.exe /EXPORTS libredwg-0.dll > libredwg-0.def
+
+
+1.4 使用lib工具从def文件生成lib文件
+
+lib /def:libredwg-0.def /machine:x64 /out:libredwg-0.lib
+
+
+
+
+查看 dll 导出函数: dumpbin /exports libredwg-0.dll
+
+查看 lib 导出函数: dumpbin /LINKERMEMBER libredwg-0.lib

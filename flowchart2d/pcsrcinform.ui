@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PCSrcInForm</class>
+ <widget class="QWidget" name="PCSrcInForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>608</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="6,2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>输入参数</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0,1,1,1">
+      <item>
+       <widget class="QRadioButton" name="sdkin">
+        <property name="text">
+         <string>外部传入</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout" columnstretch="1,3,4,1,1,0">
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="sensor">
+          <property name="text">
+           <string>传感器输入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QPushButton" name="axDel">
+          <property name="text">
+           <string>删除</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cbSensorSelected"/>
+        </item>
+        <item row="3" column="0" colspan="6">
+         <widget class="QTableWidget" name="axMotionList">
+          <column>
+           <property name="text">
+            <string>轴名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>方式</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>速度</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>位置</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>加速度</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>减速度</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="axAdd">
+          <property name="text">
+           <string>添加</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QComboBox" name="methosSelect">
+          <item>
+           <property name="text">
+            <string>编码器触发</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>外部DI触发</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>连续采集</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>采集方式</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="4">
+         <widget class="QLineEdit" name="paramsPath"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="sensorParams">
+          <property name="text">
+           <string>载入参数</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="locPc">
+        <property name="text">
+         <string>本地点云</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="LocPicFile"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="selectFile">
+          <property name="text">
+           <string>加载文件</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="LocPicDir"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="selecteDir">
+          <property name="text">
+           <string>选择目录</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>输出选择</string>
+     </property>
+     <widget class="QCheckBox" name="soutDeptPIC">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>80</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>深度图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="soutPC">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>80</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>点云图</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

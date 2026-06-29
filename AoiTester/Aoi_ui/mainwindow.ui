@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1914</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Real3DMeasure</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,4,6">
+      <item>
+       <widget class="QWidget" name="motionCtrOpter" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="imgSensorOpter" native="true"/>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="MovPathArea">
+        <property name="title">
+         <string>任务路径</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>点云示教</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="modelTech">
+             <property name="text">
+              <string>模型示教</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="tskSensorSelected"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="moveToMp">
+             <property name="text">
+              <string>移动到起点</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="moveToMpEnd">
+             <property name="text">
+              <string>移动到终点</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="pointCoord"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pointOffset">
+             <property name="text">
+              <string>点位偏置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pickMp">
+             <property name="text">
+              <string>拾取起点</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pickEndMp">
+             <property name="text">
+              <string>拾取终点</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AddRowMp">
+             <property name="text">
+              <string>新增路径</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="DelRowMp">
+             <property name="text">
+              <string>删除路径</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QTableWidget" name="MpsDT"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1914</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionUserLogin"/>
+   <addaction name="actionUserManger"/>
+   <addaction name="actionHelp"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="AxDioOpter"/>
+   <addaction name="actionCalb"/>
+   <addaction name="action"/>
+   <addaction name="actionAssociationCfg"/>
+   <addaction name="actionVisualFlow"/>
+   <addaction name="actionLocComm"/>
+   <addaction name="VisualRunaction"/>
+   <addaction name="actionRunPicTester"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_Runstatus">
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>运行状态</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="sysStatusPanel">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_Log">
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>运行日志</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QListWidget" name="RecordList"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_CCViewer">
+   <property name="minimumSize">
+    <size>
+     <width>280</width>
+     <height>280</height>
+    </size>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllDockWidgetAreas</set>
+   </property>
+   <property name="windowTitle">
+    <string>点云图</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="ccDataView"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSysReset"/>
+   <addaction name="actionLoadWrkfile"/>
+   <addaction name="actionSaveWrkfile"/>
+   <addaction name="actionWrkStart"/>
+   <addaction name="actionWrkStop"/>
+   <addaction name="actionWrkPause"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_Repr">
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllDockWidgetAreas</set>
+   </property>
+   <property name="windowTitle">
+    <string>结果报表</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="resultReport"/>
+  </widget>
+  <widget class="QToolBar" name="PointCouldOpter">
+   <property name="windowTitle">
+    <string>toolBar_5</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCCfile"/>
+   <addaction name="actionPCSave"/>
+   <addaction name="actionClrView"/>
+   <addaction name="actionHeightRamp"/>
+   <addaction name="actionRoiSelected"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionLCC"/>
+   <addaction name="actionSORFilter"/>
+   <addaction name="actionCpCpDist"/>
+   <addaction name="action3DPointGet"/>
+   <addaction name="actionFront"/>
+   <addaction name="actionBack"/>
+   <addaction name="actionXVDpos"/>
+   <addaction name="actionXVFpos"/>
+   <addaction name="actionXVLpos"/>
+   <addaction name="actionEntMange"/>
+  </widget>
+  <widget class="QToolBar" name="thrdPluger">
+   <property name="windowTitle">
+    <string>toolBar_6</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="picShowDock">
+   <property name="windowTitle">
+    <string>图片显示</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="picArea"/>
+  </widget>
+  <action name="AxDioOpter">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/valve_controller.ico</normaloff>:/CC/images/valve_controller.ico</iconset>
+   </property>
+   <property name="text">
+    <string>IO诊断</string>
+   </property>
+   <property name="toolTip">
+    <string>设备的IO状态查看</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/motioncard.ico</normaloff>:/CC/images/motioncard.ico</iconset>
+   </property>
+   <property name="text">
+    <string>运动控制</string>
+   </property>
+   <property name="toolTip">
+    <string>运动控制卡或者控制器</string>
+   </property>
+  </action>
+  <action name="actionUserLogin">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/login.ico</normaloff>:/CC/images/login.ico</iconset>
+   </property>
+   <property name="text">
+    <string>登入</string>
+   </property>
+   <property name="toolTip">
+    <string>用户登入</string>
+   </property>
+  </action>
+  <action name="actionUserManger">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccUnstack.png</normaloff>:/CC/images/ccUnstack.png</iconset>
+   </property>
+   <property name="text">
+    <string>用户管理</string>
+   </property>
+   <property name="toolTip">
+    <string>对用户的权限及密码管理</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/help.ico</normaloff>:/CC/images/help.ico</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="toolTip">
+    <string>系统帮助相关</string>
+   </property>
+  </action>
+  <action name="actionWrkStart">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/start.ico</normaloff>:/CC/images/start.ico</iconset>
+   </property>
+   <property name="text">
+    <string>加工开始</string>
+   </property>
+   <property name="toolTip">
+    <string>设备加工开始</string>
+   </property>
+  </action>
+  <action name="actionWrkStop">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/stop.ico</normaloff>:/CC/images/stop.ico</iconset>
+   </property>
+   <property name="text">
+    <string>加工停止</string>
+   </property>
+   <property name="toolTip">
+    <string>设备加工停止</string>
+   </property>
+  </action>
+  <action name="actionWrkPause">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/pause.ico</normaloff>:/CC/images/pause.ico</iconset>
+   </property>
+   <property name="text">
+    <string>加工暂停</string>
+   </property>
+   <property name="toolTip">
+    <string>设备加工暂停</string>
+   </property>
+  </action>
+  <action name="actionSysReset">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/params.ico</normaloff>:/CC/images/params.ico</iconset>
+   </property>
+   <property name="text">
+    <string>设备复位</string>
+   </property>
+   <property name="toolTip">
+    <string>设备气缸各轴恢复初始零位</string>
+   </property>
+  </action>
+  <action name="actionCalb">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/monitor.svg</normaloff>:/CC/images/monitor.svg</iconset>
+   </property>
+   <property name="text">
+    <string>加工维护</string>
+   </property>
+   <property name="toolTip">
+    <string>设备加工参数维护以及操作</string>
+   </property>
+  </action>
+  <action name="actionCCfile">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccPlus.png</normaloff>:/CC/images/ccPlus.png</iconset>
+   </property>
+   <property name="text">
+    <string>点云加载</string>
+   </property>
+   <property name="toolTip">
+    <string>打开需要查看的点云文件路径</string>
+   </property>
+  </action>
+  <action name="actionFront">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccViewIso1.png</normaloff>:/CC/images/ccViewIso1.png</iconset>
+   </property>
+   <property name="text">
+    <string>等轴侧</string>
+   </property>
+   <property name="toolTip">
+    <string>3D对象点云模型的侧视图视角</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccViewIso2.png</normaloff>:/CC/images/ccViewIso2.png</iconset>
+   </property>
+   <property name="text">
+    <string>反等轴侧</string>
+   </property>
+   <property name="toolTip">
+    <string>3D对象点云模型的反等轴侧视图视角</string>
+   </property>
+  </action>
+  <action name="actionXVLpos">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccViewXpos.png</normaloff>:/CC/images/ccViewXpos.png</iconset>
+   </property>
+   <property name="text">
+    <string>左视图</string>
+   </property>
+   <property name="toolTip">
+    <string>点云模型的X轴左视图</string>
+   </property>
+  </action>
+  <action name="actionHeightRamp">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccGradient.png</normaloff>:/CC/images/ccGradient.png</iconset>
+   </property>
+   <property name="text">
+    <string>高程图</string>
+   </property>
+   <property name="toolTip">
+    <string>对加载视口中的点云进行高程渲染</string>
+   </property>
+  </action>
+  <action name="actionAssociationCfg">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/setting.ico</normaloff>:/CC/images/setting.ico</iconset>
+   </property>
+   <property name="text">
+    <string>系统配置</string>
+   </property>
+   <property name="toolTip">
+    <string>对与本系统的一些全局操作</string>
+   </property>
+  </action>
+  <action name="actionLoadWrkfile">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccOpen.png</normaloff>:/CC/images/ccOpen.png</iconset>
+   </property>
+   <property name="text">
+    <string>文件加载</string>
+   </property>
+   <property name="toolTip">
+    <string>加工使用的加工文件加载</string>
+   </property>
+  </action>
+  <action name="actionSaveWrkfile">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccSave.png</normaloff>:/CC/images/ccSave.png</iconset>
+   </property>
+   <property name="text">
+    <string>文件保存</string>
+   </property>
+  </action>
+  <action name="actionRoiSelected">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccClippingBox.png</normaloff>:/CC/images/ccClippingBox.png</iconset>
+   </property>
+   <property name="text">
+    <string>ROI切片</string>
+   </property>
+   <property name="toolTip">
+    <string>对点云边界框选中区域的调整</string>
+   </property>
+  </action>
+  <action name="actionLCC">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccCCExtract.png</normaloff>:/CC/images/ccCCExtract.png</iconset>
+   </property>
+   <property name="text">
+    <string>连通域</string>
+   </property>
+   <property name="toolTip">
+    <string>对选中的点云实体进行连通域分块操作</string>
+   </property>
+  </action>
+  <action name="actionPCSave">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/dbContainerSymbol.png</normaloff>:/CC/images/dbContainerSymbol.png</iconset>
+   </property>
+   <property name="text">
+    <string>点云另存</string>
+   </property>
+   <property name="toolTip">
+    <string>将选中的点云数据保存为文件</string>
+   </property>
+  </action>
+  <action name="actionSORFilter">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccSORFilter.png</normaloff>:/CC/images/ccSORFilter.png</iconset>
+   </property>
+   <property name="text">
+    <string>SOR过滤</string>
+   </property>
+   <property name="toolTip">
+    <string>统计学轮廓过滤(删除远离轮廓邻近的点)</string>
+   </property>
+  </action>
+  <action name="actionCpCpDist">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccCloudCloudDistance.png</normaloff>:/CC/images/ccCloudCloudDistance.png</iconset>
+   </property>
+   <property name="text">
+    <string>云点距</string>
+   </property>
+   <property name="toolTip">
+    <string>计算两个点云之间的映射距离偏差</string>
+   </property>
+  </action>
+  <action name="actionClrView">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccDelete.png</normaloff>:/CC/images/ccDelete.png</iconset>
+   </property>
+   <property name="text">
+    <string>清空视图</string>
+   </property>
+   <property name="toolTip">
+    <string>将当前3D点云视图中的内容清空</string>
+   </property>
+  </action>
+  <action name="action3DPointGet">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccPointPicking.png</normaloff>:/CC/images/ccPointPicking.png</iconset>
+   </property>
+   <property name="text">
+    <string>点操作</string>
+   </property>
+   <property name="toolTip">
+    <string>3D视图中点云对象实体上的点相关操作</string>
+   </property>
+  </action>
+  <action name="actionXVFpos">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccViewYpos.png</normaloff>:/CC/images/ccViewYpos.png</iconset>
+   </property>
+   <property name="text">
+    <string>前视图</string>
+   </property>
+   <property name="toolTip">
+    <string>3D视图对象前视图视角</string>
+   </property>
+  </action>
+  <action name="actionXVDpos">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccViewZpos.png</normaloff>:/CC/images/ccViewZpos.png</iconset>
+   </property>
+   <property name="text">
+    <string>俯视图</string>
+   </property>
+   <property name="toolTip">
+    <string>3D视图对象俯视图视角</string>
+   </property>
+  </action>
+  <action name="actionEntMange">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccClippingBoxMultExport.png</normaloff>:/CC/images/ccClippingBoxMultExport.png</iconset>
+   </property>
+   <property name="text">
+    <string>图层管理</string>
+   </property>
+   <property name="toolTip">
+    <string>3D视图窗口中的各个实体对象的列表及相关操作</string>
+   </property>
+  </action>
+  <action name="actionRunPicTester">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccGrid.png</normaloff>:/CC/images/ccGrid.png</iconset>
+   </property>
+   <property name="text">
+    <string>跑图测试</string>
+   </property>
+   <property name="toolTip">
+    <string>对已经采集到的本地图片进行设定的流程运行测试</string>
+   </property>
+  </action>
+  <action name="actionVisualFlow">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccPivotAuto.png</normaloff>:/CC/images/ccPivotAuto.png</iconset>
+   </property>
+   <property name="text">
+    <string>可视流程</string>
+   </property>
+   <property name="toolTip">
+    <string>进入可视化的流程编辑页面</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/select3d.ico</normaloff>:/CC/images/select3d.ico</iconset>
+   </property>
+   <property name="text">
+    <string>框选裁切</string>
+   </property>
+   <property name="toolTip">
+    <string>对固定视角视窗内的点云进行2D框选裁切</string>
+   </property>
+  </action>
+  <action name="actionLocComm">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccPointListPicking.png</normaloff>:/CC/images/ccPointListPicking.png</iconset>
+   </property>
+   <property name="text">
+    <string>通讯测试</string>
+   </property>
+   <property name="toolTip">
+    <string>本系统软件的通讯设定及调测</string>
+   </property>
+  </action>
+  <action name="VisualRunaction">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/CC/images/ccStereo.png</normaloff>:/CC/images/ccStereo.png</iconset>
+   </property>
+   <property name="text">
+    <string>虚拟流程</string>
+   </property>
+   <property name="toolTip">
+    <string>虚拟运行流程测试</string>
+   </property>
+  </action>
+  <zorder>dockWidget_Repr</zorder>
+ </widget>
+ <resources>
+  <include location="icones.qrc"/>
+ </resources>
+ <connections/>
+</ui>

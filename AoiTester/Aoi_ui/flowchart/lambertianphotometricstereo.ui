@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LambertianPhotometricStereo</class>
+ <widget class="QWidget" name="LambertianPhotometricStereo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>424</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,10,1">
+     <item>
+      <widget class="QRadioButton" name="locPics">
+       <property name="text">
+        <string>本地图片组</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SelPicDir"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="dirSelected">
+       <property name="text">
+        <string>目录选择</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="2" column="2">
+      <widget class="QPushButton" name="slAdd">
+       <property name="text">
+        <string>加入</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="srcLiner">
+       <property name="text">
+        <string>图像源</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="slDel">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="4">
+      <widget class="QTableWidget" name="srcLinkTable"/>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QComboBox" name="SelectLinker"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="isGrayOut">
+     <property name="text">
+      <string>灰度输出</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help</class>
+ <widget class="QDialog" name="help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>帮助</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>291</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; color:#ff0000;&quot;&gt;主页面快捷键操作如下&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Ctr + ⬅ (左箭头)	AOI-X左移&lt;/p&gt;&lt;p&gt;Ctr +       (右箭头)	AOI-X右移&lt;/p&gt;&lt;p&gt;Ctr + ⬆(上箭头)	AOI-Y前移&lt;/p&gt;&lt;p&gt;Ctr + ⬇(下箭头)	AOI-Y后移&lt;/p&gt;&lt;p&gt;Ctr + PgUp	AOI-Z上升&lt;/p&gt;&lt;p&gt;Ctr + PgDn	AOI-Z下压&lt;/p&gt;&lt;p&gt;Ctr + 鼠标滚轮	调焦镜头调焦&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>151</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>更多关于本软件操作-&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OpenDir">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>300</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>点我查看详细文档</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
