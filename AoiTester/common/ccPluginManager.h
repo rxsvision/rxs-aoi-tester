@@ -1,4 +1,4 @@
-#ifndef CCPLUGINMANAGER_H
+﻿#ifndef CCPLUGINMANAGER_H
 #define CCPLUGINMANAGER_H
 
 //##########################################################################

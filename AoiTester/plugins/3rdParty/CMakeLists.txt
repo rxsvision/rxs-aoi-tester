@@ -1,4 +1,4 @@
-# Auto add all subdirectories
+﻿# Auto add all subdirectories
 file( GLOB subdirectories * )
 
 foreach( dir ${subdirectories} )

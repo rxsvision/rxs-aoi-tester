@@ -1,4 +1,4 @@
-#ifndef DATAOUTSET_H
+﻿#ifndef DATAOUTSET_H
 #define DATAOUTSET_H
 
 #include <QWidget>

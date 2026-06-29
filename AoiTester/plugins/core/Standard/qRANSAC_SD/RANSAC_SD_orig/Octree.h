@@ -1,4 +1,4 @@
-#ifndef OCTREE_HEADER
+﻿#ifndef OCTREE_HEADER
 #define OCTREE_HEADER
 #include "PointCloud.h"
 #include <GfxTL/AACubeTree.h>

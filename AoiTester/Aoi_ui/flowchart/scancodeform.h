@@ -1,4 +1,4 @@
-#ifndef SCANCODEFORM_H
+﻿#ifndef SCANCODEFORM_H
 #define SCANCODEFORM_H
 
 #include <QWidget>

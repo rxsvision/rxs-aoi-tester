@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qSRA">
     <file>qSRA.png</file>
     <file>gearIcon.png</file>

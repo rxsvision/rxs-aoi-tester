@@ -1,4 +1,4 @@
-#ifndef CCAPPLICATION_H
+﻿#ifndef CCAPPLICATION_H
 #define CCAPPLICATION_H
 
 //##########################################################################

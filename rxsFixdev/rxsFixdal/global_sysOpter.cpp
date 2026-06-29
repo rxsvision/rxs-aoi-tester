@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include<stdlib.h>
 #include<time.h>
 
@@ -129,7 +129,7 @@ double straightness(double* Xgather, double* Ygather, unsigned gatherNum, double
 	delete[] Yvals;
 	pDiff = maxPd;
 	nDiff = maxNd;
-	//std::cout << "×î´ó+¹«²î:" << maxPd << ",×î´ó-¹«²î:" << maxNd << "\r\n";
+	//std::cout << "æœ€å¤§+å…¬å·®:" << maxPd << ",æœ€å¤§-å…¬å·®:" << maxNd << "\r\n";
 	return maxPd + (0 - maxNd);
 }
 

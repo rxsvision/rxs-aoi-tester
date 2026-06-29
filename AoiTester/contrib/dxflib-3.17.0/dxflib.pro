@@ -1,4 +1,4 @@
-exists(../../../shared.pri) {
+﻿exists(../../../shared.pri) {
     include( ../../../shared.pri )
 }
 

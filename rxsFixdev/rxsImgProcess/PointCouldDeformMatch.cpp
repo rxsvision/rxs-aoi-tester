@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 
 
 
@@ -95,8 +95,8 @@ short PointCouldDeformationStep::Run() {
 	}
 	if (ce->pNums < 1 || ce->Entiy == 0) { return -203; }
 	rr.clear();
-	std::string fileds[] = { "±äÐÎ¶È","±äÐÎÀàÐÍ","PASS" };
-	rr.SetFiled(fileds, 3, "±äÐÎ¶È¼ì²â");
+	std::string fileds[] = { "å˜å½¢åº¦","å˜å½¢ç±»åž‹","PASS" };
+	rr.SetFiled(fileds, 3, "å˜å½¢åº¦æ£€æµ‹");
 
 	CloudEntity model = { 0,0 };
 	rxsPointCouldp bondp[2] = { {0,0,0},{0,0,0} };
@@ -116,7 +116,7 @@ short PointCouldDeformationStep::Run() {
 		return -4001;
 	}
 	int ri = rr.AddRow() - 1;
-	rr.SetValue("±äÐÎ¶È", std::to_string(rv), ri);
+	rr.SetValue("å˜å½¢åº¦", std::to_string(rv), ri);
 	hrdSyetemEnver.pSystemer->FrontProcessMsgSender(CBC_VISUAL_UPDSSR, (void*)&_id);
 	free(model.Entiy);
 	return 0;

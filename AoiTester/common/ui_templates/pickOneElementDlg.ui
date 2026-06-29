@@ -1,4 +1,4 @@
-<ui version="4.0" >
+﻿<ui version="4.0" >
  <class>PickOneElementDialog</class>
  <widget class="QDialog" name="PickOneElementDialog" >
   <property name="geometry" >

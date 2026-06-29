@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.0 )
+﻿cmake_minimum_required( VERSION 3.0 )
 
 option( PLUGIN_IO_QPDAL "Install qPDALIO plugin to read & write LAS files" OFF )
 

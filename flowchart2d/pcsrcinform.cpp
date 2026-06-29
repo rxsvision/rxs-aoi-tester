@@ -1,4 +1,4 @@
-#include <QFileDialog>
+﻿#include <QFileDialog>
 #include "pcsrcinform.h"
 #include "ui_pcsrcinform.h"
 #include "rxsFixdal.h"

@@ -1,4 +1,4 @@
-#-- Add an Option to toggle the generation of the API documentation
+﻿#-- Add an Option to toggle the generation of the API documentation
 option(BUILD_QPCL_PLUGIN_DOCUMENTATION "Use Doxygen to create the HTML based QPCL API documentation" OFF)
 if(BUILD_QPCL_PLUGIN_DOCUMENTATION)
   FIND_PACKAGE(Doxygen)

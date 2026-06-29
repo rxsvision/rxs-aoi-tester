@@ -1,4 +1,4 @@
-#ifndef EXAMPLE_PLUGIN_HEADER
+﻿#ifndef EXAMPLE_PLUGIN_HEADER
 #define EXAMPLE_PLUGIN_HEADER
 
 //##########################################################################

@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/toolbar">
     <file>pcl.png</file>
     <file>PclUtils/icons/mls_smoothing.png</file>

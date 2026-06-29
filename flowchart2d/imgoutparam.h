@@ -1,4 +1,4 @@
-#ifndef IMGOUTPARAM_H
+﻿#ifndef IMGOUTPARAM_H
 #define IMGOUTPARAM_H
 
 #include <QWidget>

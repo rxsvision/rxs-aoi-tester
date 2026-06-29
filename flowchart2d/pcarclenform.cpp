@@ -1,4 +1,4 @@
-#include "pcarclenform.h"
+﻿#include "pcarclenform.h"
 #include "ui_pcarclenform.h"
 
 pcArclenForm::pcArclenForm(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-poly.htm"
+﻿/*<html><pre>  -<a                             href="qh-poly.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    poly.h

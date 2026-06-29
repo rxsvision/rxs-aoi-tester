@@ -1,4 +1,4 @@
-#ifndef GfxTL__DYNVECTORKERNEL_HEADER__
+﻿#ifndef GfxTL__DYNVECTORKERNEL_HEADER__
 #define GfxTL__DYNVECTORKERNEL_HEADER__
 
 namespace GfxTL

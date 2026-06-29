@@ -1,4 +1,4 @@
-#ifndef SPHERE_HEADER
+﻿#ifndef SPHERE_HEADER
 #define SPHERE_HEADER
 #include "basic.h"
 #include <MiscLib/Vector.h>

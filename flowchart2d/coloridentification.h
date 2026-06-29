@@ -1,4 +1,4 @@
-#ifndef COLORIDENTIFICATION_H
+﻿#ifndef COLORIDENTIFICATION_H
 #define COLORIDENTIFICATION_H
 
 #include <QWidget>

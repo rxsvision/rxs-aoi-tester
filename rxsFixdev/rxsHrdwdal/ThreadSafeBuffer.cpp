@@ -1,4 +1,4 @@
-//Copyright (c) 2019 KEYENCE CORPORATION. All rights reserved.
+﻿//Copyright (c) 2019 KEYENCE CORPORATION. All rights reserved.
 
 #include "ThreadSafeBuffer.h"
 

@@ -1,4 +1,4 @@
-#ifndef PDAL_IO_HEADER
+﻿#ifndef PDAL_IO_HEADER
 #define PDAL_IO_HEADER
 
 //##########################################################################

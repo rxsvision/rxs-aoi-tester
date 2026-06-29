@@ -1,4 +1,4 @@
-#ifndef GfxTL__L1NORM_HEADER__
+﻿#ifndef GfxTL__L1NORM_HEADER__
 #define GfxTL__L1NORM_HEADER__
 #include <GfxTL/MathHelper.h>
 #include <GfxTL/ScalarTypeConversion.h>

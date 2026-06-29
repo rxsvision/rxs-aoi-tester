@@ -1,4 +1,4 @@
-#ifndef SHOWPARAMBASEFORM_H
+﻿#ifndef SHOWPARAMBASEFORM_H
 #define SHOWPARAMBASEFORM_H
 
 #include <QWidget>

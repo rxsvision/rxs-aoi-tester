@@ -1,4 +1,4 @@
-#ifndef BITMAP_HEADER
+﻿#ifndef BITMAP_HEADER
 #define BITMAP_HEADER
 #include <MiscLib/Vector.h>
 #include <utility>

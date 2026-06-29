@@ -1,4 +1,4 @@
-#ifndef QCORE_IO_HEADER
+﻿#ifndef QCORE_IO_HEADER
 #define QCORE_IO_HEADER
 
 //##########################################################################

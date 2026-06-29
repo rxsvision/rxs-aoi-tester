@@ -1,4 +1,4 @@
-#ifndef GfxTL__ORIENTATION_HEADER__
+﻿#ifndef GfxTL__ORIENTATION_HEADER__
 #define GfxTL__ORIENTATION_HEADER__
 
 #include <GfxTL/VectorXD.h>

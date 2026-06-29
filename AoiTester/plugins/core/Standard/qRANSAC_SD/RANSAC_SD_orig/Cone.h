@@ -1,4 +1,4 @@
-#ifndef CONE_HEADER
+﻿#ifndef CONE_HEADER
 #define CONE_HEADER
 #ifdef DOPARALLEL
 #include <omp.h>

@@ -1,12 +1,12 @@
-#pragma once
+ï»¿#pragma once
 
 
 #include <vector>
 #include <map>
 #include <iostream>
 #include <string>
-#include <thread> //¶àÏß³Ì
-#include <winsock.h> //socketÍ·ÎÄ¼þ
+#include <thread> //å¤šçº¿ç¨‹
+#include <winsock.h> //socketå¤´æ–‡ä»¶
 #pragma comment (lib,"ws2_32.lib")
 
 #pragma warning(disable : 4996)

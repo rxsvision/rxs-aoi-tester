@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-set.htm"
+﻿/*<html><pre>  -<a                             href="qh-set.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    qset.h

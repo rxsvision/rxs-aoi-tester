@@ -1,4 +1,4 @@
-#ifndef CC_WAVEFORM_HEADER
+﻿#ifndef CC_WAVEFORM_HEADER
 #define CC_WAVEFORM_HEADER
 
 //Local

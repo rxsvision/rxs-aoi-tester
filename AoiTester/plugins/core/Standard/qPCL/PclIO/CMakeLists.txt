@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+﻿cmake_minimum_required(VERSION 3.0)
 
 #CloudCompare PCL I/O plugin (for PCD files)
 project( QPCL_IO_PLUGIN )

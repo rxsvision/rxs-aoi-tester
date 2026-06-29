@@ -1,4 +1,4 @@
-#ifndef __AAKDTREE_HEADER__
+﻿#ifndef __AAKDTREE_HEADER__
 #define __AAKDTREE_HEADER__
 
 #include <GfxTL/BaseTree.h>

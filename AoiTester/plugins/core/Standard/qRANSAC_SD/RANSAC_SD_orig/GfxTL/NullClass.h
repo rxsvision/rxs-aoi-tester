@@ -1,4 +1,4 @@
-#ifndef GfxTL_NULLCLASS_HEADER__
+﻿#ifndef GfxTL_NULLCLASS_HEADER__
 #define GfxTL_NULLCLASS_HEADER__
 
 namespace GfxTL

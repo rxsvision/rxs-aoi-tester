@@ -1,4 +1,4 @@
-#ifndef LEVMARFUNC_HEADER
+﻿#ifndef LEVMARFUNC_HEADER
 #define LEVMARFUNC_HEADER
 
 template< class ScalarT >

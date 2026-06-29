@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
     <qresource prefix="/CC/plugin/qAnimation">
         <file>images/animation.png</file>
         <file>info.json</file>

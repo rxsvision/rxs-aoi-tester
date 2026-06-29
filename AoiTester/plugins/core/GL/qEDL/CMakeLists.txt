@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+﻿cmake_minimum_required(VERSION 3.0)
 
 option( PLUGIN_GL_QEDL "Check to install qEDL plugin" OFF )
 

@@ -1,4 +1,4 @@
-#ifndef BITMAPPRIMITIVESHAPE_HEADER
+﻿#ifndef BITMAPPRIMITIVESHAPE_HEADER
 #define BITMAPPRIMITIVESHAPE_HEADER
 #include "BasePrimitiveShape.h"
 #include <GfxTL/AABox.h>

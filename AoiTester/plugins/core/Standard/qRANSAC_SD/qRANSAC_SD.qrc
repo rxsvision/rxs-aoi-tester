@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
     <qresource prefix="/CC/plugin/qRANSAC_SD">
         <file>qRANSAC_SD.png</file>
         <file>info.json</file>

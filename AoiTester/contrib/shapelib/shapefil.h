@@ -1,4 +1,4 @@
-#ifndef SHAPEFILE_H_INCLUDED
+﻿#ifndef SHAPEFILE_H_INCLUDED
 #define SHAPEFILE_H_INCLUDED
 
 /******************************************************************************

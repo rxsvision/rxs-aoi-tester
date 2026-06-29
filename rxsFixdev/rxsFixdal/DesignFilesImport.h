@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "dwg.h"
 #include <Windows.h>
 

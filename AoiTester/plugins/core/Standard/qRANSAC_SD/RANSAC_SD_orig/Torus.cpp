@@ -1,4 +1,4 @@
-#include "Torus.h"
+﻿#include "Torus.h"
 #include <GfxTL/VectorXD.h>
 #include <limits>
 #include <iterator>

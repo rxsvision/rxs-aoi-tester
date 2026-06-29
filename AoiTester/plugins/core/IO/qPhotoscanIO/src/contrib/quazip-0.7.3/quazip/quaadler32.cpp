@@ -1,4 +1,4 @@
-/*
+﻿/*
 Copyright (C) 2010 Adam Walczak
 Copyright (C) 2005-2014 Sergey A. Tachenov
 

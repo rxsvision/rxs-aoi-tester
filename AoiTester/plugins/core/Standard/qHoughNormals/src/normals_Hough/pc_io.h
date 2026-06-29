@@ -1,4 +1,4 @@
-/* License Information
+﻿/* License Information
  *
  *  Copyright (C) ONERA, The French Aerospace Lab
  *  Author: Alexandre BOULCH

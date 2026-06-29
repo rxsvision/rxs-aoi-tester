@@ -1,4 +1,4 @@
-#ifndef CC_RDB_FILTER_HEADER
+﻿#ifndef CC_RDB_FILTER_HEADER
 #define CC_RDB_FILTER_HEADER
 
 //##########################################################################

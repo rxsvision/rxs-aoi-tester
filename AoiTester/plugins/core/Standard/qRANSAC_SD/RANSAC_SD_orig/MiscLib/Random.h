@@ -1,4 +1,4 @@
-#ifndef MiscLib__RANDOM_HEADER__
+﻿#ifndef MiscLib__RANDOM_HEADER__
 #define MiscLib__RANDOM_HEADER__
 /*
  * random.h -- Random number generation interface

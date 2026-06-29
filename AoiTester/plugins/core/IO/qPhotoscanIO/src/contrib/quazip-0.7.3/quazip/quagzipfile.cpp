@@ -1,4 +1,4 @@
-/*
+﻿/*
 Copyright (C) 2005-2014 Sergey A. Tachenov
 
 This file is part of QuaZIP.

@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-stat.htm"
+﻿/*<html><pre>  -<a                             href="qh-stat.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    stat.h

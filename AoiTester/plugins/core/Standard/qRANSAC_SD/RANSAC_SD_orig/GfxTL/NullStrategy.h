@@ -1,4 +1,4 @@
-#ifndef __GfxTL_NULLSTRATEGY_HEADER__
+﻿#ifndef __GfxTL_NULLSTRATEGY_HEADER__
 #define __GfxTL_NULLSTRATEGY_HEADER__
 
 namespace GfxTL

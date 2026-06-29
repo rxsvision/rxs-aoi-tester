@@ -1,4 +1,4 @@
-#ifndef GfxTL__VECTORKERNEL_HEADER__
+﻿#ifndef GfxTL__VECTORKERNEL_HEADER__
 #define GfxTL__VECTORKERNEL_HEADER__
 
 #include <GfxTL/ScalarTypeConversion.h>

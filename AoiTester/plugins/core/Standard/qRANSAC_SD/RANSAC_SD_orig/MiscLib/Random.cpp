@@ -1,4 +1,4 @@
-/*
+﻿/*
  * random.c
  *
  * implementiert lagged Fibonacci random sequence

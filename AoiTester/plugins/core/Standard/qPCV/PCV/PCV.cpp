@@ -1,4 +1,4 @@
-//##########################################################################
+﻿//##########################################################################
 //#                                                                        #
 //#                                PCV                                     #
 //#                                                                        #
@@ -182,7 +182,7 @@ bool PCV::GenerateRays(unsigned numberOfRays, std::vector<CCVector3>& rays, bool
 		return false;
 	}
 
-	//we keep only the light directions that meets input parameters (non predictible if not in 360� mode!)
+	//we keep only the light directions that meets input parameters (non predictible if not in 360° mode!)
 	if (!mode360)
 	{
 		unsigned lastIndex = 0;

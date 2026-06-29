@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qFacets">
     <file>images/logoBRGM.png</file>
     <file>images/extractFM.png</file>

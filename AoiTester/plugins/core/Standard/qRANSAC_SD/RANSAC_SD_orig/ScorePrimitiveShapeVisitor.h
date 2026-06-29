@@ -1,4 +1,4 @@
-#ifndef SCOREPRIMITIVESHAPEVISITOR_HEADER
+﻿#ifndef SCOREPRIMITIVESHAPEVISITOR_HEADER
 #define SCOREPRIMITIVESHAPEVISITOR_HEADER
 #include "PrimitiveShapeVisitor.h"
 #include <MiscLib/RefCounted.h>

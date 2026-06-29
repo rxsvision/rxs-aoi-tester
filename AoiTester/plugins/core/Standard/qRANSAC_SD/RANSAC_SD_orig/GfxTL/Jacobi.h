@@ -1,4 +1,4 @@
-#ifndef __GfxTL_JACOBI_HEADER__
+﻿#ifndef __GfxTL_JACOBI_HEADER__
 #define __GfxTL_JACOBI_HEADER__
 #include <GfxTL/MatrixXX.h>
 #include <GfxTL/VectorXD.h>

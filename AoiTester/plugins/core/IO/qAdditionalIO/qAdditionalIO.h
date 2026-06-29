@@ -1,4 +1,4 @@
-#ifndef Q_ADDITIONAL_IO_PLUGIN_HEADER
+﻿#ifndef Q_ADDITIONAL_IO_PLUGIN_HEADER
 #define Q_ADDITIONAL_IO_PLUGIN_HEADER
 
 //##########################################################################

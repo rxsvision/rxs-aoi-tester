@@ -1,4 +1,4 @@
-#ifndef MiscLib__VECTOR_HEADER__
+﻿#ifndef MiscLib__VECTOR_HEADER__
 #define MiscLib__VECTOR_HEADER__
 #include <MiscLib/AlignedAllocator.h>
 #include <algorithm>

@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 
 
 
@@ -143,7 +143,7 @@ short ImgOutStep::Run() {
 			prev->GetResult(&rrr);
 			int rc = rrr->RowCount();
 			for (int i = 0; i < rc; i++) {
-				const char* v = rrr->GetValue(i, "ÌõÂë");
+				const char* v = rrr->GetValue(i, "æ¡ç ");
 				const char* P1 = rrr->GetValue(i, "P1");
 				const char* P2 = rrr->GetValue(i, "P2");
 				const char* P3 = rrr->GetValue(i, "P3");

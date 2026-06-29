@@ -1,4 +1,4 @@
-#ifndef USECUSTOMFORM_H
+﻿#ifndef USECUSTOMFORM_H
 #define USECUSTOMFORM_H
 
 #include <QWidget>

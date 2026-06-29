@@ -1,4 +1,4 @@
-#include "ConePrimitiveShape.h"
+﻿#include "ConePrimitiveShape.h"
 #include "PrimitiveShapeVisitor.h"
 #include "ScoreComputer.h"
 #include "Bitmap.h"

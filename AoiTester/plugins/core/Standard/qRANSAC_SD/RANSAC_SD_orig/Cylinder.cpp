@@ -1,4 +1,4 @@
-#include "Cylinder.h"
+﻿#include "Cylinder.h"
 #include "LevMarFitting.h"
 #include <MiscLib/Performance.h>
 #include <GfxTL/VectorXD.h>

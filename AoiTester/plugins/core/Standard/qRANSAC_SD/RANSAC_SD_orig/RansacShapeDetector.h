@@ -1,4 +1,4 @@
-#ifndef RANSACSHAPEDETECTOR_HEADER
+﻿#ifndef RANSACSHAPEDETECTOR_HEADER
 #define RANSACSHAPEDETECTOR_HEADER
 #include "PointCloud.h"
 #include "PrimitiveShapeConstructor.h"

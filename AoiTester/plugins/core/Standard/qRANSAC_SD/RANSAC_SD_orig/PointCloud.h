@@ -1,4 +1,4 @@
-#ifndef _POINTCLOUD_H
+﻿#ifndef _POINTCLOUD_H
 #define _POINTCLOUD_H
 #include <cstdio>
 #ifndef _USE_MATH_DEFINES

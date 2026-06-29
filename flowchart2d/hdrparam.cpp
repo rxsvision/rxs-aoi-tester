@@ -1,4 +1,4 @@
-#include "hdrparam.h"
+﻿#include "hdrparam.h"
 #include "ui_hdrparam.h"
 
 hdrParam::hdrParam(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

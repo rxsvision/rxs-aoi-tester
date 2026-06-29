@@ -1,4 +1,4 @@
-#ifndef CONVERTFORMATFORM_H
+﻿#ifndef CONVERTFORMATFORM_H
 #define CONVERTFORMATFORM_H
 
 #include <QWidget>

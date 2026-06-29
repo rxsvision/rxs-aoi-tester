@@ -1,4 +1,4 @@
-#ifdef WIN32
+﻿#ifdef WIN32
 #include <windows.h>
 #endif
 #include "RansacShapeDetector.h"

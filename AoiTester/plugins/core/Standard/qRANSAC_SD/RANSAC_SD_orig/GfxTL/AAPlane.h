@@ -1,4 +1,4 @@
-#ifndef __GfxTL__AAPLANE_HEADER__
+﻿#ifndef __GfxTL__AAPLANE_HEADER__
 #define __GfxTL__AAPLANE_HEADER__
 
 namespace GfxTL

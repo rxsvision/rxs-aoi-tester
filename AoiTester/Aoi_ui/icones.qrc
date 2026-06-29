@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
     <qresource prefix="/CC">
         <file>images/donate.png</file>
         <file>images/ccPickCenterAuto.png</file>

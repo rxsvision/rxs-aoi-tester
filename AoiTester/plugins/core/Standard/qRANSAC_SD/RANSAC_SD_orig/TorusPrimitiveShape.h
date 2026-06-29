@@ -1,4 +1,4 @@
-#ifndef TORUSPRIMITIVESHAPE_HEADER
+﻿#ifndef TORUSPRIMITIVESHAPE_HEADER
 #define TORUSPRIMITIVESHAPE_HEADER
 #include "BitmapPrimitiveShape.h"
 #include "Torus.h"

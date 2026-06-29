@@ -1,4 +1,4 @@
-/* Random kit 1.6 */
+﻿/* Random kit 1.6 */
 
 /*
  * Copyright (c) 2004-2006, Jean-Sebastien Roy (js@jeannot.org)

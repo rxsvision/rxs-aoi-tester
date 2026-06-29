@@ -1,4 +1,4 @@
-//Inspired from QTFFmpegWrapper (Daniel Roggen) and the 'muxing.c' example in FFmpeg doc/examples
+﻿//Inspired from QTFFmpegWrapper (Daniel Roggen) and the 'muxing.c' example in FFmpeg doc/examples
 #ifndef Q_VIDEO_ENCODE_HEADER
 #define Q_VIDEO_ENCODE_HEADER
 

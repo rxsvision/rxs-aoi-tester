@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 
 extern HrdWrkSyetemEnv hrdSyetemEnver;
 
@@ -21,15 +21,15 @@ short PointCouldLengthStep::Run() {
 
 	rr.clear();
 	if (pclp->ispredict) {
-		std::string fileds[] = { "Ô¤²â³¤¶È","PASS" };
-		rr.SetFiled(fileds, 2, "³¤¶È²âÁ¿");
+		std::string fileds[] = { "é¢„æµ‹é•¿åº¦","PASS" };
+		rr.SetFiled(fileds, 2, "é•¿åº¦æµ‹é‡");
 
 
 		//hrdSyetemEnver.rtk->predictLength(, pclp->Params.Plp.pModelin);
 	}
 	else {
-		std::string fileds[] = { "³¤¶È","PASS" };
-		rr.SetFiled(fileds, 2, "³¤¶È²âÁ¿");
+		std::string fileds[] = { "é•¿åº¦","PASS" };
+		rr.SetFiled(fileds, 2, "é•¿åº¦æµ‹é‡");
 		if (prev == 0) { return -201; }
 		if ((prev->OutType() & BLKOUTRESULTYPE_PC) != BLKOUTRESULTYPE_PC) { return -202; }
 		const CloudEntity* ce;
@@ -53,7 +53,7 @@ short PointCouldLengthStep::Run() {
 		float rv = 0;	
 		if (hrdSyetemEnver.rtk->lengthOfBound(*(CloudEntity*)ce, ce_b, pclp->Params.Mlp.consider_y, rv, pclp->Params.Mlp.dir)) {
 			int rc = rr.AddRow() - 1;
-			rr.SetValue("³¤¶È", std::to_string(rv), rc);
+			rr.SetValue("é•¿åº¦", std::to_string(rv), rc);
 			return 0;
 		}
 	}

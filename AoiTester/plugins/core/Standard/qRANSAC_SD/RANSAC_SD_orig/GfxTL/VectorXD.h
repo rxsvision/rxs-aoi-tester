@@ -1,4 +1,4 @@
-#ifndef __GfxTL_VECTORXD_HEADER__
+﻿#ifndef __GfxTL_VECTORXD_HEADER__
 #define __GfxTL_VECTORXD_HEADER__
 #include <assert.h>
 #ifndef _USE_MATH_DEFINES

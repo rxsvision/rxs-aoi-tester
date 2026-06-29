@@ -1,4 +1,4 @@
-win32-msvc {
+﻿win32-msvc {
   DEFINES += _CRT_SECURE_NO_DEPRECATE
 }
 

@@ -1,4 +1,4 @@
-#ifndef FBX_IO_HEADER
+﻿#ifndef FBX_IO_HEADER
 #define FBX_IO_HEADER
 
 //##########################################################################

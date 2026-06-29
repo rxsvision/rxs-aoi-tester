@@ -1,4 +1,4 @@
-#### Version 1.3.2 released on 22.12.15 ####
+﻿#### Version 1.3.2 released on 22.12.15 ####
 
   Bugfixes [Backported from 2.0.0 branch]:
     - Fixed possible crash when having a QCPGraph with scatters only and a non-transparent main/fill brush of the graph

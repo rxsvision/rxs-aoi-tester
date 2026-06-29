@@ -1,4 +1,4 @@
-#ifndef __AACUBE_HEADER__
+﻿#ifndef __AACUBE_HEADER__
 #define __AACUBE_HEADER__
 #include <algorithm>
 #include <utility>

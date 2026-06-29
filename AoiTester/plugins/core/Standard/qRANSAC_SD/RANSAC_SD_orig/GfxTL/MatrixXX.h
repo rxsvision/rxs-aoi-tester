@@ -1,4 +1,4 @@
-#ifndef GfxTL__MATRIXX_HEADER__
+﻿#ifndef GfxTL__MATRIXX_HEADER__
 #define GfxTL__MATRIXX_HEADER__
 #ifndef _USE_MATH_DEFINES
 #define _USE_MATH_DEFINES

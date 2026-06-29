@@ -1,4 +1,4 @@
-#ifndef LEVMARLSWEIGHT_HEADER
+﻿#ifndef LEVMARLSWEIGHT_HEADER
 #define LEVMARLSWEIGHT_HEADER
 #include <algorithm>
 #include <cmath>

@@ -1,4 +1,4 @@
-#ifndef MiscLib__PERFORMANCE_HEADER__
+﻿#ifndef MiscLib__PERFORMANCE_HEADER__
 #define MiscLib__PERFORMANCE_HEADER__
 #ifdef WIN32
 #include <windows.h>

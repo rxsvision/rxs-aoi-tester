@@ -1,4 +1,4 @@
-#include "public.h"
+ï»¿#include "public.h"
 
 #include <io.h>
 #include <stdio.h>
@@ -231,7 +231,7 @@ std::string rxsResultReport::SaveReportString(bool& isOk_ng) {
 		ss << "\r\n" << forName << "->" << name << ":\n";
 	}
 	if ((rof & 2) == 2) {
-		//×Ö¶ÎÁÐÍ·
+		//å­—æ®µåˆ—å¤´
 		for (size_t i = 0; i < vLen; i++) {
 			ss << facFiledGrps[i] << ",";
 		}

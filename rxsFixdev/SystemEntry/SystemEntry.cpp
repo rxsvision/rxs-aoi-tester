@@ -1,4 +1,4 @@
-
+ï»¿
 #include "rxsMainFrame.h"
 #include "private.h"
 
@@ -32,7 +32,7 @@ RXSAPIS std::string stringSubreplace(std::string resource_str, std::string sub_s
 {
 	std::string dst_str = resource_str;
 	std::string::size_type pos = 0;
-	while ((pos = dst_str.find(sub_str)) != std::string::npos)   //Ìæ»»ËùÓĞÖ¸¶¨×Ó´®
+	while ((pos = dst_str.find(sub_str)) != std::string::npos)   //æ›¿æ¢æ‰€æœ‰æŒ‡å®šå­ä¸²
 	{
 		dst_str.replace(pos, sub_str.length(), new_str);
 	}
@@ -134,10 +134,10 @@ bool UserManger::resetuVal(char* k, char* Pwd, char Auth) {
 }
 
 RXSAPIS bool UserManger::ResetUser(const char* Uname,const char* Pwd, const char* NewPwd, USER_AUTH newAuth) {
-	if (CurUser.Auth == USER_AUTH::ADMIN) {//µ±Ç°admin ¿ÉÖØÖÃÈ¨ÏŞ¼°ÃÜÂë
+	if (CurUser.Auth == USER_AUTH::ADMIN) {//å½“å‰admin å¯é‡ç½®æƒé™åŠå¯†ç 
 		return resetuVal((char*)Uname, (char*)NewPwd, newAuth);
 	}
-	if (memcmp(CurUser.Uname, Uname, strlen(CurUser.Uname)) == 0) {//µ±Ç°ÓÃ»§Ö»ÄÜÖØÖÃ×Ô¼ºµÄÃÜÂë
+	if (memcmp(CurUser.Uname, Uname, strlen(CurUser.Uname)) == 0) {//å½“å‰ç”¨æˆ·åªèƒ½é‡ç½®è‡ªå·±çš„å¯†ç 
 		UserInfo su = { (char*)Uname,(char*)Pwd,USER_AUTH::NOLOGIN };
 		if (matchuser(su)) {
 			return resetuVal((char*)Uname, (char*)NewPwd, su.Auth);
@@ -197,7 +197,7 @@ bool UserManger::isdefadm(UserInfo& uif) {
 		}
 	}
 	if (x != 6) { return false; }
-	if (x == 0) { ((swGtxparam*)swGtxper)->SytemLoger.Write((char*)"ÓÃ»§Ãû³¤¶ÈÎª0!"); return false; }
+	if (x == 0) { ((swGtxparam*)swGtxper)->SytemLoger.Write((char*)"ç”¨æˆ·åé•¿åº¦ä¸º0!"); return false; }
 	for (x = 0; uif.Pwd[x] != 0; x++) {
 		if (x > 11) {
 			return false;
@@ -207,7 +207,7 @@ bool UserManger::isdefadm(UserInfo& uif) {
 		}
 	}
 	if (x != 10) { return false; }
-	if (x == 0) { ((swGtxparam*)swGtxper)->SytemLoger.Write((char*)"ÃÜÂë³¤¶ÈÎª0!"); return false; }
+	if (x == 0) { ((swGtxparam*)swGtxper)->SytemLoger.Write((char*)"å¯†ç é•¿åº¦ä¸º0!"); return false; }
 	uif.Uname = 0;
 	uif.Auth = USER_AUTH::ADMIN;
 	return true;

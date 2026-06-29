@@ -1,4 +1,4 @@
-#ifndef __GfxTL_STDCONTAINERADAPTOR_HEADER__
+﻿#ifndef __GfxTL_STDCONTAINERADAPTOR_HEADER__
 #define __GfxTL_STDCONTAINERADAPTOR_HEADER__
 #include <memory>
 

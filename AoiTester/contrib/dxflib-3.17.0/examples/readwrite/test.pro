@@ -1,4 +1,4 @@
-#include( ../../../shared.pri )
+﻿#include( ../../../shared.pri )
 
 win32-msvc {
   DEFINES += _CRT_SECURE_NO_DEPRECATE

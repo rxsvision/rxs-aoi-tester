@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qCork">
     <file>iconSwap.png</file>
     <file>csg_types.png</file>

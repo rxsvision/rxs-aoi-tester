@@ -1,4 +1,4 @@
-#ifndef CCFILEUTILS_H
+﻿#ifndef CCFILEUTILS_H
 #define CCFILEUTILS_H
 //##########################################################################
 //#                                                                        #

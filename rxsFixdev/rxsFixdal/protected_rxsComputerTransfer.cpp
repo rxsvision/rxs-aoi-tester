@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "rxsFixdal.h"
 #include "protected_rxsComputerTransferManger.h"

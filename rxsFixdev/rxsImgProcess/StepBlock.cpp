@@ -1,4 +1,4 @@
-#include "private.h"
+﻿#include "private.h"
 
 #define			InImgGrpsPtr		((std::vector<rxsImg>*)MultinGrps)
 #define			InMatGrpsPtr		((std::vector<cv::Mat>*)MultinGrps)

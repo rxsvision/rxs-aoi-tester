@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "rxsFixdal.h"
 #include <vector>
 #include <map>
@@ -16,7 +16,7 @@
 
 
 bool TotalLeastSquares(double* Xgather, double* Ygather, unsigned gatherNum, double& k, double& b);
-///ֱ�߶�
+///直线度
 double straightness(double* Xgather, double* Ygather, unsigned gatherNum, double k, double b, double& pDiff, double& nDiff);
 void valueCenter(double* srcVgather, unsigned gatherNum);
 

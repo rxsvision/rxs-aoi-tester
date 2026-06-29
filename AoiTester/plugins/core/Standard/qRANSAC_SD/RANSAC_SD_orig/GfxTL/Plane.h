@@ -1,4 +1,4 @@
-#ifndef __GfxTL_PLANE_HEADER__
+﻿#ifndef __GfxTL_PLANE_HEADER__
 #define __GfxTL_PLANE_HEADER__
 #include <GfxTL/Covariance.h>
 #include <GfxTL/Jacobi.h>

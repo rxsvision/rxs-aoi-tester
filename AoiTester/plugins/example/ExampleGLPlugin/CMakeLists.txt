@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.0 )
+﻿cmake_minimum_required( VERSION 3.0 )
 
 option( PLUGIN_EXAMPLE_GL "Check to install example GL plugin" OFF )
 

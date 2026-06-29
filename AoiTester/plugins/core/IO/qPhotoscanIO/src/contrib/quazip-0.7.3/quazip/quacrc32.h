@@ -1,4 +1,4 @@
-#ifndef QUACRC32_H
+﻿#ifndef QUACRC32_H
 #define QUACRC32_H
 
 /*

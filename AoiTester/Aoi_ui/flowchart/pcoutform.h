@@ -1,4 +1,4 @@
-#ifndef PCOUTFORM_H
+﻿#ifndef PCOUTFORM_H
 #define PCOUTFORM_H
 
 #include <QWidget>

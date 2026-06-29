@@ -1,4 +1,4 @@
-//##########################################################################
+﻿//##########################################################################
 //#                                                                        #
 //#                               CCLIB                                    #
 //#                                                                        #
@@ -32,7 +32,7 @@
 #endif
 
 /*** MACROS FOR TRIBOXOVERLAP ***/
-/*** TRIBOXOVERLAP code is largely inspired from Tomas Akenine-M�ller's algorithm
+/*** TRIBOXOVERLAP code is largely inspired from Tomas Akenine-M鰈ler's algorithm
 	http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/code/tribox3.txt
 **/
 

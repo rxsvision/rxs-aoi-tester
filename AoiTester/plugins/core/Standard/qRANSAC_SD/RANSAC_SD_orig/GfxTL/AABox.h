@@ -1,4 +1,4 @@
-#ifndef __GfxTL_AABOX_HEADER__
+﻿#ifndef __GfxTL_AABOX_HEADER__
 #define __GfxTL_AABOX_HEADER__
 #include <limits>
 #include <algorithm>

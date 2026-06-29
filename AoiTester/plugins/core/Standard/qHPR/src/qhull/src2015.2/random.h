@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-geom.htm"
+﻿/*<html><pre>  -<a                             href="qh-geom.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
   random.h

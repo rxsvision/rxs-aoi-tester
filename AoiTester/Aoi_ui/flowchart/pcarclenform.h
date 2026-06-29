@@ -1,4 +1,4 @@
-#ifndef PCARCLENFORM_H
+﻿#ifndef PCARCLENFORM_H
 #define PCARCLENFORM_H
 
 #include <QWidget>

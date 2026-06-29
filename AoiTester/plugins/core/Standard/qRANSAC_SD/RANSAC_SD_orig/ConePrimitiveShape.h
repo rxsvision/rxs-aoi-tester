@@ -1,4 +1,4 @@
-#ifndef CONEPRIMITIVESHAPE_HEADER
+﻿#ifndef CONEPRIMITIVESHAPE_HEADER
 #define CONEPRIMITIVESHAPE_HEADER
 #include "BitmapPrimitiveShape.h"
 #include "Cone.h"

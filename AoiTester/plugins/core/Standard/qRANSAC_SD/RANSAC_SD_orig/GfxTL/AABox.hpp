@@ -1,4 +1,4 @@
-
+﻿
 namespace GfxTL
 {
 	template< class Point >

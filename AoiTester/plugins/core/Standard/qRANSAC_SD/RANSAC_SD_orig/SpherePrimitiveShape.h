@@ -1,4 +1,4 @@
-#ifndef SPHEREPRIMITIVESHAPE_HEADER
+﻿#ifndef SPHEREPRIMITIVESHAPE_HEADER
 #define SPHEREPRIMITIVESHAPE_HEADER
 #include "BitmapPrimitiveShape.h"
 #include "Sphere.h"

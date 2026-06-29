@@ -1,4 +1,4 @@
-#include "ccWaveform.h"
+﻿#include "ccWaveform.h"
 
 //Qt
 #include <QDataStream>

@@ -1,4 +1,4 @@
-#ifndef RSERRORS_H
+﻿#ifndef RSERRORS_H
 #define RSERRORS_H
 
 /*robot service errors*/

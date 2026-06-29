@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 #pragma warning(disable : 4996)
 
 
@@ -79,10 +79,10 @@ short ColorRecognitionStep::Run() {
 	if (hrdSyetemEnver.rtk != 0) {
 		ColorRecogParam* crp = (ColorRecogParam*)InParamsGet();
 		rpicGather(crp->objDir);
-		//ÄÚ²¿¼¯³ÉËã·¨´¦Àíµ÷ÓÃ
+		//å†…éƒ¨é›†æˆç®—æ³•å¤„ç†è°ƒç”¨
 		rr.clear();
-		std::string filed[2] = { "±àºÅ","½á¹û" };
-		rr.SetFiled(filed, 2, "ÑÕÉ«¼ì²â");
+		std::string filed[2] = { "ç¼–å·","ç»“æžœ" };
+		rr.SetFiled(filed, 2, "é¢œè‰²æ£€æµ‹");
 		hrdSyetemEnver.rtk->colorReg(crp->rootDir, crp->objDir, &rr);
 		return 0;
 	}

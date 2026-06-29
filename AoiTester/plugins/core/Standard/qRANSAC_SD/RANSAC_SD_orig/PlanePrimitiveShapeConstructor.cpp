@@ -1,4 +1,4 @@
-#include "PlanePrimitiveShapeConstructor.h"
+﻿#include "PlanePrimitiveShapeConstructor.h"
 #include "PlanePrimitiveShape.h"
 #include "ScoreComputer.h"
 #include <GfxTL/NullClass.h>

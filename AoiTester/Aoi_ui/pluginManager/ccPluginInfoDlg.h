@@ -1,4 +1,4 @@
-#ifndef CCPLUGININFODLG_H
+﻿#ifndef CCPLUGININFODLG_H
 #define CCPLUGININFODLG_H
 //##########################################################################
 //#                                                                        #

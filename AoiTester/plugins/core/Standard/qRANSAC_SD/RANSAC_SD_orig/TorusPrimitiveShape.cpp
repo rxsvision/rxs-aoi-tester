@@ -1,4 +1,4 @@
-#include "TorusPrimitiveShape.h"
+﻿#include "TorusPrimitiveShape.h"
 #include "PrimitiveShapeVisitor.h"
 #include <MiscLib/Performance.h>
 #include <sstream>

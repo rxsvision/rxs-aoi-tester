@@ -1,4 +1,4 @@
-#include "conditionscomparison.h"
+﻿#include "conditionscomparison.h"
 #include "ui_conditionscomparison.h"
 
 ConditionsComparison::ConditionsComparison(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

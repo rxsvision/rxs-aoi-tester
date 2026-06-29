@@ -1,4 +1,4 @@
-#ifndef FBXCOMMAND_H
+﻿#ifndef FBXCOMMAND_H
 #define FBXCOMMAND_H
 
 //##########################################################################

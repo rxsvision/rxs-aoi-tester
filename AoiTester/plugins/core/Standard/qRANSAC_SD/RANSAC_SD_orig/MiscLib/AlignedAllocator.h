@@ -1,4 +1,4 @@
-#ifndef MiscLib__ALIGNEDALLOCATOR_HEADER__
+﻿#ifndef MiscLib__ALIGNEDALLOCATOR_HEADER__
 #define MiscLib__ALIGNEDALLOCATOR_HEADER__
 #include <memory>
 #ifndef __APPLE__

@@ -1,4 +1,4 @@
-project(QuaZip)
+﻿project(QuaZip)
 cmake_minimum_required(VERSION 2.6)
 
 # CMP0042: Explicitly acknowledge MACOSX_RPATH

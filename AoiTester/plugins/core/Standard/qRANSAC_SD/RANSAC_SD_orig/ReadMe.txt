@@ -1,4 +1,4 @@
-###################################################################
+﻿###################################################################
 #                                                                 #
 #    PrimitiveShapes - software for extracting primitive shapes   #
 #                      (planes, spheres, cylinders, cones, tori)  #

@@ -1,4 +1,4 @@
-#ifndef _BASIC_H_
+﻿#ifndef _BASIC_H_
 #define _BASIC_H_
 #ifndef _USE_MATH_DEFINES
 #define _USE_MATH_DEFINES

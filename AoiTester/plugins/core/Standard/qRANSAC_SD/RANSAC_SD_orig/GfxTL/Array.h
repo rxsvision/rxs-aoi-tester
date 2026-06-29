@@ -1,4 +1,4 @@
-#ifndef GfxTL__ARRAY_HEADER__
+﻿#ifndef GfxTL__ARRAY_HEADER__
 #define GfxTL__ARRAY_HEADER__
 #include <iterator>
 #include <iostream>

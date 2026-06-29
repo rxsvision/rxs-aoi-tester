@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-mem.htm"
+﻿/*<html><pre>  -<a                             href="qh-mem.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    mem.h

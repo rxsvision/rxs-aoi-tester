@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 #include "IVmCnnCodeRecg.h"
 #include "IVMDataSet.h"
 #include "IVmSaveImage.h"
@@ -101,8 +101,8 @@ int HkVmProcesser::GetResult(std::string flowObjName, rxsResultReport* rpp) {
 		if (pdsResult == 0) { return -101; }
 
 		int rnum = pdsResult->GetResultNum();
-		std::string fv[3] = { "NO","Ãû","Öµ" };
-		std::string rn = "Èý·½½á¹û:";
+		std::string fv[3] = { "NO","å","å€¼" };
+		std::string rn = "ä¸‰æ–¹ç»“æžœ:";
 		rpp->SetFiled(fv, 3, (rn + flowObjName));
 		int r = 0;
 		for (int n = 0; n < rnum; n++) {
@@ -112,24 +112,24 @@ int HkVmProcesser::GetResult(std::string flowObjName, rxsResultReport* rpp) {
 
 			r = rpp->AddRow();
 			rpp->SetValue("NO", std::to_string(r), r - 1);
-			rpp->SetValue("Ãû", ori->strParamName, r - 1);
+			rpp->SetValue("å", ori->strParamName, r - 1);
 
 			if (ori->nParamType == 3) {
 				char* V = ori->pstStringValue->strValue;
 				if (V != 0) {
-					rpp->SetValue("Öµ", V, r - 1);
+					rpp->SetValue("å€¼", V, r - 1);
 				}
 				else {
-					rpp->SetValue("Öµ", "null", r - 1);
+					rpp->SetValue("å€¼", "null", r - 1);
 				}
 			}
 			else if (ori->nParamType == 2) {
 				std::string v = std::to_string(*ori->pFloatValue);
-				rpp->SetValue("Öµ", v, r - 1);
+				rpp->SetValue("å€¼", v, r - 1);
 			}
 			else if (ori->nParamType == 1) {
 				std::string v = std::to_string(*ori->pIntValue);
-				rpp->SetValue("Öµ", v, r - 1);
+				rpp->SetValue("å€¼", v, r - 1);
 			}
 			else {
 			}

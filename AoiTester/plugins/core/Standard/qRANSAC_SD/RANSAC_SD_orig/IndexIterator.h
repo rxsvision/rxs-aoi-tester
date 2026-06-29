@@ -1,4 +1,4 @@
-#ifndef INDEXITERATOR_HEADER
+﻿#ifndef INDEXITERATOR_HEADER
 #define INDEXITERATOR_HEADER
 #include <iterator>
 

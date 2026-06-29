@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 
 
 ScanCodeStep::ScanCodeStep(int id) :StepBlockBase(id)
@@ -107,8 +107,8 @@ short ScanCodeStep::Run() {
 		}
 		int Len = ret.size();
 		if (Len > 0) {
-			std::string filed[6] = { "ID","ÌõÂë","P1","P2","P3","P4" };
-			rr.SetFiled(filed, 6, "ÌõÂëÄÚÈİ");
+			std::string filed[6] = { "ID","æ¡ç ","P1","P2","P3","P4" };
+			rr.SetFiled(filed, 6, "æ¡ç å†…å®¹");
 			char buff[50];
 			int row = 0;
 			for (unsigned x = 0; x < Len; x++) {
@@ -120,7 +120,7 @@ short ScanCodeStep::Run() {
 					sprintf_s(buff, "%d", row);
 					row -= 1;
 					rr.SetValue("ID", buff, row);
-					rr.SetValue("ÌõÂë", v, row);
+					rr.SetValue("æ¡ç ", v, row);
 					sprintf_s(buff, "%d,%d", pos[0].x, pos[0].y);
 					rr.SetValue("P1", buff, row);
 					sprintf_s(buff, "%d,%d", pos[1].x, pos[1].y);

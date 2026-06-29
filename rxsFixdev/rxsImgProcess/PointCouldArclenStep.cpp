@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 extern HrdWrkSyetemEnv hrdSyetemEnver;
 
 
@@ -67,8 +67,8 @@ short PointCouldArclenStep::Run() {
 	prev->GetResult(&ce);
 	if (ce->pNums < 1 || ce->Entiy == 0) { return -203; }
 	rr.clear();
-	std::string fileds[] = { "ID","»¡³¤(mm)","Í¶Ó°³¤(mm)","ÂÖÀª¶È","PASS" };
-	rr.SetFiled(fileds, 5, "»¡³¤²âÁ¿");
+	std::string fileds[] = { "ID","å¼§é•¿(mm)","æŠ•å½±é•¿(mm)","è½®å»“åº¦","PASS" };
+	rr.SetFiled(fileds, 5, "å¼§é•¿æµ‹é‡");
 	if (!hrdSyetemEnver.rtk->fitBSpline(ce->Entiy, ce->pNums, &rr, pcalp->dir)) {
 		return -1;
 	}

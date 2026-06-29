@@ -1,4 +1,4 @@
-//#######################################################################################
+Ôªø//#######################################################################################
 //#                                                                                     #
 //#                              CLOUDCOMPARE PLUGIN: qCSF                              #
 //#                                                                                     #
@@ -16,7 +16,7 @@
 //#  Zhang W, Qi J, Wan P, Wang H, Xie D, Wang X, Yan G. An Easy-to-Use Airborne LiDAR  #
 //#  Data Filtering Method Based on Cloth Simulation. Remote Sensing. 2016; 8(6):501.   #
 //#                                                                                     #
-//#                                     Copyright ©                                     #
+//#                                     Copyright ¬©                                     #
 //#               RAMM laboratory, School of Geography, Beijing Normal University       #
 //#                               (http://ramm.bnu.edu.cn/)                             #
 //#                                                                                     #
@@ -99,7 +99,7 @@ bool CSF::readPointsFromFile(std::string filename)
 	return true;
 }
 
-//CSF÷˜≥Ã–Ú dofiltering
+//CSF√ñ√∑¬≥√å√ê√≤ dofiltering
 bool CSF::do_filtering(	std::vector<int>& groundIndexes,
 						std::vector<int>& offGroundIndexes,
 						bool exportClothMesh,

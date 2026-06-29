@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include "rxsFixdal.h"
 #include "protected.h"
@@ -127,17 +127,17 @@ void* ImageableGather::DataGet(unsigned &count) {
 		return 0;
 	}
 	if (Method == 1) {
-		//Òì²½²É¼¯
+		//å¼‚æ­¥é‡‡é›†
 		if (curOpter->IsCollectionCompleted(0) > 0) {
 			return curOpter->DataGet(count);
 		}
 	}
 	else if(Method ==2){
-		//Í¬²½²É¼¯
+		//åŒæ­¥é‡‡é›†
 		return curOpter->DataGet(count);
 	}
 	else {
-		//²É¼¯·½Ê½ÎŞĞ§
+		//é‡‡é›†æ–¹å¼æ— æ•ˆ
 		return 0;
 	}
 }

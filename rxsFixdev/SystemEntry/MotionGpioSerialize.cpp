@@ -1,4 +1,4 @@
-
+ï»¿
 #include "public.h"
 #include "private.h"
 
@@ -81,7 +81,7 @@ void MotionGpioSerialize::ready() {
 			memset(AxGrps, 0, sizeof(AxisInfo) * AxNum);
 		if (AxGrps != 0) {
 			for (auto it = (*swGtxper).AxGrpsMapIndex.begin(); it != (*swGtxper).AxGrpsMapIndex.end(); it++) {
-				//it->second ÎªÖµ
+				//it->second ä¸ºå€¼
 				int mi = (*swGtxper).AxGrpsMapIndex[it->first];
 				AxGrps[mi].AxName = (char*)it->first.c_str();
 			}
@@ -123,7 +123,7 @@ void MotionGpioSerialize::ready() {
 
 bool MotionGpioSerialize::isMotionPrevOk() {
 	if (AxNum < 1) {
-		string msg = "ÒÆ¶¯Ê§°Ü!ÖáÊıÎª0";
+		string msg = "ç§»åŠ¨å¤±è´¥!è½´æ•°ä¸º0";
 		(*swGtxper).SytemLoger.Write((char*)msg.c_str());
 		return false;
 	}
@@ -132,7 +132,7 @@ bool MotionGpioSerialize::isMotionPrevOk() {
 
 bool MotionGpioSerialize::AxNamePrevOk(const char* AxName) {
 	if (AxName == 0) {
-		string msg = "ÒÆ¶¯Ê§°Ü!ÖáÃû³Æ²ÎÊıÎªNULL";
+		string msg = "ç§»åŠ¨å¤±è´¥!è½´åç§°å‚æ•°ä¸ºNULL";
 		(*swGtxper).SytemLoger.Write((char*)msg.c_str());
 		return false;
 	}
@@ -221,11 +221,11 @@ void MotionGpioSerialize::AxOrgHome(unsigned AxisNo) {
 	}
 }
 
-//ÆäÖĞ Flag  ±êÖ¾ ¸÷ÊıÖµº¬Òå 3 ÎªÒ»¶Îµ½Î»Ö®ºóµÚ¶ş¶ÎÎ»ÒÆµ½Î» 6 Îª Ô­µã»ØÔ­µãÖĞ, 8 Îª Ô­µã²¹³¥ÖĞ£¬9ÎªĞèÒªÇåÁãÎ»ÖÃ
+//å…¶ä¸­ Flag  æ ‡å¿— å„æ•°å€¼å«ä¹‰ 3 ä¸ºä¸€æ®µåˆ°ä½ä¹‹åç¬¬äºŒæ®µä½ç§»åˆ°ä½ 6 ä¸º åŸç‚¹å›åŸç‚¹ä¸­, 8 ä¸º åŸç‚¹è¡¥å¿ä¸­ï¼Œ9ä¸ºéœ€è¦æ¸…é›¶ä½ç½®
 void MotionGpioSerialize::AxSignalStsdeal(unsigned aindex) {
 	long bm = 1 << aindex, ax = 0;
 	unsigned short axisid = aindex + 1;
-	if (AxGrps[aindex].Rethome.Flag != 0) {//»ØÔ­µãÖĞµÄ¼ì²â
+	if (AxGrps[aindex].Rethome.Flag != 0) {//å›åŸç‚¹ä¸­çš„æ£€æµ‹
 		if (AxGrps[aindex].Status.OnLimtP)
 		{
 			AxGrps[aindex].TagePos = -1000000000;
@@ -242,20 +242,20 @@ void MotionGpioSerialize::AxSignalStsdeal(unsigned aindex) {
 			AxGrps[aindex].Rethome.Flag = 1;
 			return;
 		}
-		if (AxGrps[aindex].Status.IsInp || AxGrps[aindex].Status.IsMotionFinsh) {//¶ÔÓ¦ÖáÔË¶¯¾²Ö¹
-			if ((AxGrps[aindex].Rethome.Flag == 6 || AxGrps[aindex].Rethome.Flag == 3)) {//´Ë´¦ÓëÏÂÃæ²»ÄÜÓÅ»¯ÔÚÍ¬Ò»¸öµØ·½
+		if (AxGrps[aindex].Status.IsInp || AxGrps[aindex].Status.IsMotionFinsh) {//å¯¹åº”è½´è¿åŠ¨é™æ­¢
+			if ((AxGrps[aindex].Rethome.Flag == 6 || AxGrps[aindex].Rethome.Flag == 3)) {//æ­¤å¤„ä¸ä¸‹é¢ä¸èƒ½ä¼˜åŒ–åœ¨åŒä¸€ä¸ªåœ°æ–¹
 				AxGrps[aindex].Rethome.Flag = 2;
 				return;
 			}
-			if (AxGrps[aindex].Rethome.Flag == 2) {//´Ë´¦ÓëÉÏÃæ²»ÄÜÓÅ»¯ÔÚÍ¬Ò»¸öµØ·½
+			if (AxGrps[aindex].Rethome.Flag == 2) {//æ­¤å¤„ä¸ä¸Šé¢ä¸èƒ½ä¼˜åŒ–åœ¨åŒä¸€ä¸ªåœ°æ–¹
 				AxGrps[aindex].TageVel = AxGrps[aindex].Rethome.ZeroCorrectvel;
 				AxGrps[aindex].TagePos = 0 - AxGrps[aindex].Rethome.ZeroCorrectpos * 2;
 				MU->AxHome(axisid, AxGrps[aindex]);
 				return;
 			}
 
-			if (AxGrps[aindex].Rethome.Flag == 8) {//Ô­µã²¹³¥ÔË¶¯£¬ÔÚµÚ°Ë²½µÄÊ±ºòÇ°ÖÃÌõ¼şÒÑ¾­×¼±¸Íê±Ï	
-				if (AxGrps[aindex].LimitPos.Homeoffset != 0) {//²¹³¥Ç°ÖÃÌõ¼ş×¼±¸
+			if (AxGrps[aindex].Rethome.Flag == 8) {//åŸç‚¹è¡¥å¿è¿åŠ¨ï¼Œåœ¨ç¬¬å…«æ­¥çš„æ—¶å€™å‰ç½®æ¡ä»¶å·²ç»å‡†å¤‡å®Œæ¯•	
+				if (AxGrps[aindex].LimitPos.Homeoffset != 0) {//è¡¥å¿å‰ç½®æ¡ä»¶å‡†å¤‡
 					AxGrps[aindex].TageVel = AxGrps[aindex].Rethome.ZeroCorrectvel;
 					AxGrps[aindex].TagePos = AxGrps[aindex].LimitPos.Homeoffset;
 					MU->PpMoveRel(axisid, AxGrps[aindex]);
@@ -273,7 +273,7 @@ void MotionGpioSerialize::AxSignalStsdeal(unsigned aindex) {
 				if (abs((int)AxGrps[aindex].Status.EncPos) < 2 && (int)(AxGrps[aindex].Status.prfPos * 1000) == 0)
 				{
 					AxGrps[aindex].Rethome.Flag = 0;
-					//²¢ÉèÖÃµ¥ÖáÈíÏŞÎ»
+					//å¹¶è®¾ç½®å•è½´è½¯é™ä½
 					if (AxGrps[aindex].LimitPos.Positive != 0 && AxGrps[aindex].LimitPos.Negative != 0)
 					{
 						MU->SetSoftLimit(axisid, AxGrps[aindex].LimitPos.Positive, AxGrps[aindex].LimitPos.Negative);
@@ -283,7 +283,7 @@ void MotionGpioSerialize::AxSignalStsdeal(unsigned aindex) {
 				AxGrps[aindex].Rethome.Flag = 9;
 				return;
 			}
-			if (AxGrps[aindex].Rethome.Flag == 4) {//´Ë´¦²»ÒªÓëÉÏÃæ 1 ¶ÎµÄÊ±ºòÓÅ»¯ÔÚÒ»Æğ£¬½â¾öĞèÒªÑÓ³ÙÎÊÌâ
+			if (AxGrps[aindex].Rethome.Flag == 4) {//æ­¤å¤„ä¸è¦ä¸ä¸Šé¢ 1 æ®µçš„æ—¶å€™ä¼˜åŒ–åœ¨ä¸€èµ·ï¼Œè§£å†³éœ€è¦å»¶è¿Ÿé—®é¢˜
 				AxGrps[aindex].TageVel = AxGrps[aindex].Rethome.Vel;
 				AxGrps[aindex].TagePos = AxGrps[aindex].Rethome.ZeroCorrectpos;
 				MU->PpMoveRel(axisid, AxGrps[aindex]);
@@ -301,7 +301,7 @@ void MotionGpioSerialize::AxSignalStsdeal(unsigned aindex) {
 			}
 			if (AxGrps[aindex].Rethome.Flag == 1 && AxGrps[aindex].Status.OnOrg) {
 				MU->AxStop(axisid, true);
-				AxGrps[aindex].Rethome.Flag = 4;//´Ë´¦²»ÒªÓëÉÏÃæ flag = 4 ¶ÎµÄÊ±ºòÓÅ»¯ÔÚÒ»Æğ£¬½â¾öĞèÒªÑÓ³ÙÎÊÌâ
+				AxGrps[aindex].Rethome.Flag = 4;//æ­¤å¤„ä¸è¦ä¸ä¸Šé¢ flag = 4 æ®µçš„æ—¶å€™ä¼˜åŒ–åœ¨ä¸€èµ·ï¼Œè§£å†³éœ€è¦å»¶è¿Ÿé—®é¢˜
 				return;
 			}
 		}
@@ -334,8 +334,8 @@ void MotionGpioSerialize::GetioSignal() {
 
 bool MotionGpioSerialize::AxHome(const char* AxName) {
 	if (AxName == 0) {
-		swGtxper->SytemLoger.Write((char*)"AxName == 0 ½øĞĞÁËÈ«²¿Öá»ØÁã²Ù×÷!");
-		//È«Öá»ØÁã
+		swGtxper->SytemLoger.Write((char*)"AxName == 0 è¿›è¡Œäº†å…¨éƒ¨è½´å›é›¶æ“ä½œ!");
+		//å…¨è½´å›é›¶
 		if (inSideMode) {
 
 		}
@@ -349,7 +349,7 @@ bool MotionGpioSerialize::AxHome(const char* AxName) {
 	}
 	else {
 		string msg = AxName;
-		swGtxper->SytemLoger.Write((char*)(msg + "½øĞĞÁË»ØÁã²Ù×÷!").c_str());
+		swGtxper->SytemLoger.Write((char*)(msg + "è¿›è¡Œäº†å›é›¶æ“ä½œ!").c_str());
 		if (!isMotionPrevOk()) {
 			return true;
 		}
@@ -372,7 +372,7 @@ bool MotionGpioSerialize::AxHome(const char* AxName) {
 bool MotionGpioSerialize::AxStop(const char* AxName) {
 	if (MU == 0) { return true; }
 	if (AxName == 0) {
-		//È«ÖáÍ£Ö¹
+		//å…¨è½´åœæ­¢
 		MU->AxStop(INTMAXVAL, false);
 		return true;
 	}
@@ -385,7 +385,7 @@ bool MotionGpioSerialize::AxStop(const char* AxName) {
 bool MotionGpioSerialize::AxServon(bool on_off, const char* AxName) {
 	if (MU == 0) { return false; }
 	if (AxName == 0) {
-		//È«ÖáÊ¹ÄÜ
+		//å…¨è½´ä½¿èƒ½
 		MU->Servon(INTMAXVAL, on_off);
 		return true;
 	}
@@ -444,7 +444,7 @@ bool MotionGpioSerialize::AxMove(const char* AxName, u8 method, float TageVel, f
 	}
 	if (AxGrps == 0) {
 		string msg = AxName;
-		msg += "ÒÆ¶¯Ê§°Ü!ÑÏÖØ´íÎó:Öá×éĞÅÏ¢ÎªNULLÊÇ·ñÒÑ¾­ÕıÈ··ÖÅä£¿";
+		msg += "ç§»åŠ¨å¤±è´¥!ä¸¥é‡é”™è¯¯:è½´ç»„ä¿¡æ¯ä¸ºNULLæ˜¯å¦å·²ç»æ­£ç¡®åˆ†é…ï¼Ÿ";
 		(*swGtxper).SytemLoger.Write((char*)msg.c_str());
 		return false;
 	}
@@ -485,16 +485,16 @@ bool MotionGpioSerialize::AxMove(const char* AxName, u8 method, float TageVel, f
 		MU->JogMove(mi, method, AxGrps[mi]);
 		return true;
 	}
-	//ÆäËûÔòÈº×é·½Ê½ÔË¶¯
+	//å…¶ä»–åˆ™ç¾¤ç»„æ–¹å¼è¿åŠ¨
 	if (AxGrps[mi].Mode == GROUPSALVER) {
 		string msg = AxName;
-		msg += "¸ÃÖáµ±Ç°Èº×é´ÓÖáÎŞ·¨ÔË¶¯£¬ÇëÔËĞĞ¶ÔÓ¦Ö÷Öá!";
+		msg += "è¯¥è½´å½“å‰ç¾¤ç»„ä»è½´æ— æ³•è¿åŠ¨ï¼Œè¯·è¿è¡Œå¯¹åº”ä¸»è½´!";
 		(*swGtxper).SytemLoger.Write((char*)msg.c_str());
 		return false;
 	}
 	if (AxGrps[mi].GrpData.SalveCount < 1 || AxGrps[mi].GrpData.SalveTable == 0) {
 		string msg = AxName;
-		msg += ",´íÎó:¸ÃÖáµ±Ç°Èº×éÔË¶¯´ÓÖá²ÎÊıÎ´ÉèÖÃ!";
+		msg += ",é”™è¯¯:è¯¥è½´å½“å‰ç¾¤ç»„è¿åŠ¨ä»è½´å‚æ•°æœªè®¾ç½®!";
 		(*swGtxper).SytemLoger.Write((char*)msg.c_str());
 		return false;
 	}

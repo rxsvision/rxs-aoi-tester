@@ -1,4 +1,4 @@
-#ifndef Q_RDB_IO_PLUGIN_HEADER
+﻿#ifndef Q_RDB_IO_PLUGIN_HEADER
 #define Q_RDB_IO_PLUGIN_HEADER
 
 //##########################################################################

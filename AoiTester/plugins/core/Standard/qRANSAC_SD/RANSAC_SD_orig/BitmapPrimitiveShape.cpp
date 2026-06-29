@@ -1,4 +1,4 @@
-#include "BitmapPrimitiveShape.h"
+﻿#include "BitmapPrimitiveShape.h"
 #include "Bitmap.h"
 #include <iostream>
 #include <fstream>

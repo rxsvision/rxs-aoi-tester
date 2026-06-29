@@ -1,4 +1,4 @@
-
+﻿
 #ifndef PHOTOLABEL_H
 #define PHOTOLABEL_H
 #include "rxsHrdwdal.h"

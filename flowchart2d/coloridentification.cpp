@@ -1,4 +1,4 @@
-#include "coloridentification.h"
+﻿#include "coloridentification.h"
 #include "ui_coloridentification.h"
 #include "rxsFixdal.h"
 #include <QFileDialog>

@@ -1,4 +1,4 @@
-#include "PointCloud.h"
+﻿#include "PointCloud.h"
 #include <MiscLib/Vector.h>
 #include <iostream>
 #include <iterator>

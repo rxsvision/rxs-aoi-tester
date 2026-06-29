@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "rxsFixdal.h"
 #include "protected.h"
 
@@ -48,11 +48,11 @@ double Cpk::GetVal(double* sampleData, unsigned sdLen) {
     double sigma = Standarddeviation(sampleData, sdLen, avr);
 
     if (uplVal < 0 && downlVal < 0) {
-        //·½·¨1 ÖÐÐÄ¹æ¸ñ + ¿í¶È·½Ê½
+        //æ–¹æ³•1 ä¸­å¿ƒè§„æ ¼ + å®½åº¦æ–¹å¼
 
     }
     else {
-        //·½·¨2 ¹æ¸ñÉÏÏÂÏÞ·½Ê½
+        //æ–¹æ³•2 è§„æ ¼ä¸Šä¸‹é™æ–¹å¼
         double cpu = (uplVal - avr) / (3 * sigma);
         double cpl = (avr - downlVal) / (3 * sigma);
 

@@ -1,4 +1,4 @@
-#ifndef CCTRANSLATIONMANAGER_H
+﻿#ifndef CCTRANSLATIONMANAGER_H
 #define CCTRANSLATIONMANAGER_H
 
 //##########################################################################

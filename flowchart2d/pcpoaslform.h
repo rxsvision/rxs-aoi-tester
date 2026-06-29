@@ -1,4 +1,4 @@
-#ifndef PCPOASLFORM_H
+﻿#ifndef PCPOASLFORM_H
 #define PCPOASLFORM_H
 
 #include <QWidget>

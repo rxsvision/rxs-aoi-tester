@@ -1,4 +1,4 @@
-find_package(Qt5Test REQUIRED)
+﻿find_package(Qt5Test REQUIRED)
 
 
 QT5_ADD_RESOURCES(TestDataResources_SRCS TestData.qrc)

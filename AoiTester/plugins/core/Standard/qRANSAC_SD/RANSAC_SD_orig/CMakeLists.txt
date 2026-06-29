@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+﻿cmake_minimum_required(VERSION 3.0)
 
 #Anytime we use COMPILE_DEFINITIONS_XXX we must define this policy!
 #(and setting it outside of this file doesn't seem to work...)

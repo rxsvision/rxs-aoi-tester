@@ -1,4 +1,4 @@
-/* License Information
+﻿/* License Information
  *
  *  Copyright (C) Alexandre Boulch and Renaud Marlet
  *

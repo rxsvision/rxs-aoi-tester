@@ -1,4 +1,4 @@
-#ifndef GfxTL__STDOVERRIDES_HEADER__
+﻿#ifndef GfxTL__STDOVERRIDES_HEADER__
 #define GfxTL__STDOVERRIDES_HEADER__
 #include <algorithm>
 #include <utility>

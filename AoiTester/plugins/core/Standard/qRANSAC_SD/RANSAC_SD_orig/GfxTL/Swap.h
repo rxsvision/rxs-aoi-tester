@@ -1,4 +1,4 @@
-#ifndef GfxTL__SWAP_HEADER__
+﻿#ifndef GfxTL__SWAP_HEADER__
 #define GfxTL__SWAP_HEADER__
 #include <algorithm>
 

@@ -1,4 +1,4 @@
-#include "thirdparty.h"
+﻿#include "thirdparty.h"
 #include "ui_thirdparty.h"
 #include "imgProcess.h"
 #include <QFileDialog>

@@ -1,4 +1,4 @@
-#include "SpherePrimitiveShape.h"
+﻿#include "SpherePrimitiveShape.h"
 #include "PrimitiveShapeVisitor.h"
 #include "Bitmap.h"
 #include <GfxTL/AABox.h>

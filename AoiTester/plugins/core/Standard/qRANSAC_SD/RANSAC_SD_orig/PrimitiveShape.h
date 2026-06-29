@@ -1,4 +1,4 @@
-#ifndef PRIMITIVESHAPE_HEADER
+﻿#ifndef PRIMITIVESHAPE_HEADER
 #define PRIMITIVESHAPE_HEADER
 #include "basic.h"
 #include <MiscLib/RefCount.h>

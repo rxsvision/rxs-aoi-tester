@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
     <qresource prefix="/CC/plugin/qPCV" >
       <file>cc_ShadeVisIcon.png</file>
       <file>info.json</file>

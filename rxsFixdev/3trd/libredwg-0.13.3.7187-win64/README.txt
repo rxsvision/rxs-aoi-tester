@@ -1,4 +1,4 @@
-LibreDWG - free implementation of the DWG file format
+﻿LibreDWG - free implementation of the DWG file format
 
 LibreDWG is a free C library to read and write DWG files.  This program is
 part of the GNU project, released under the aegis of GNU.  It is licensed

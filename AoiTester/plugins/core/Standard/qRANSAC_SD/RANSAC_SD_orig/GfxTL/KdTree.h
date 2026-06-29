@@ -1,4 +1,4 @@
-#ifndef GfxTL__KDTREE_HEADER__
+﻿#ifndef GfxTL__KDTREE_HEADER__
 #define GfxTL__KDTREE_HEADER__
 #include <GfxTL/BaseTree.h>
 #include <GfxTL/ScalarTypeDeferer.h>

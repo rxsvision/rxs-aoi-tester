@@ -1,4 +1,4 @@
-#include "RefCount.h"
+﻿#include "RefCount.h"
 #ifdef _DEBUG
 #include <assert.h>
 #endif

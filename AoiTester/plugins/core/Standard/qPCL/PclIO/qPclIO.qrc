@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
     <qresource prefix="/CC/plugin/qPclIO">
         <file>info.json</file>
     </qresource>

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+﻿cmake_minimum_required(VERSION 3.0)
 
 option( PLUGIN_STANDARD_QCORK "Check to install qCORK plugin" OFF )
 

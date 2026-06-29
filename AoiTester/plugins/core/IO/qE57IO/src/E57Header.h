@@ -1,4 +1,4 @@
-#ifndef CC_E57_HEADER_HEADER
+﻿#ifndef CC_E57_HEADER_HEADER
 #define CC_E57_HEADER_HEADER
 
 #include <cstdint>

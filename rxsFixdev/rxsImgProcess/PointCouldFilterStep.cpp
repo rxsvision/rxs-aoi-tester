@@ -1,4 +1,4 @@
-#include "private.h"
+﻿#include "private.h"
 
 
 PointCouldFilterStep::PointCouldFilterStep(int id) :StepBlockBase(id) {

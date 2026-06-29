@@ -1,4 +1,4 @@
-#include "TorusPrimitiveShapeConstructor.h"
+﻿#include "TorusPrimitiveShapeConstructor.h"
 #include "TorusPrimitiveShape.h"
 #include "ScoreComputer.h"
 #include <GfxTL/NullClass.h>

@@ -1,4 +1,4 @@
-#ifndef GfxTL__AACUBETREE_HEADER__
+﻿#ifndef GfxTL__AACUBETREE_HEADER__
 #define GfxTL__AACUBETREE_HEADER__
 #include <deque>
 #include <GfxTL/BaseTree.h>

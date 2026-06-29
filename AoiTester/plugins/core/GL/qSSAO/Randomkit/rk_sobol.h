@@ -1,4 +1,4 @@
-/* Random kit 1.6 */
+Ôªø/* Random kit 1.6 */
 
 /*
  * Copyright (c) 2004-2006, Jean-Sebastien Roy (js@jeannot.org)
@@ -105,8 +105,8 @@ extern const unsigned long rk_sobol_SLdirections[];
 extern const unsigned long rk_sobol_Ldirections[];
 
 /*
- * Peter J‰ckel coefficients of the free direction integers as given
- * in "Monte Carlo Methods in Finance", by Peter J‰ckel, section 8.3
+ * Peter JÈãçkel coefficients of the free direction integers as given
+ * in "Monte Carlo Methods in Finance", by Peter JÈãçkel, section 8.3
  * Defined up to dimension 32.
  */
 extern const unsigned long rk_sobol_Jdirections[];

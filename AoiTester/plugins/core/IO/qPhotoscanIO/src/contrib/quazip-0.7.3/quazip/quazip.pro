@@ -1,4 +1,4 @@
-TEMPLATE = lib
+﻿TEMPLATE = lib
 CONFIG += qt warn_on
 QT -= gui
 

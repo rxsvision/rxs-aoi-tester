@@ -1,4 +1,4 @@
-#ifndef __CHROCODILELIBPLUGINDEF_H__
+﻿#ifndef __CHROCODILELIBPLUGINDEF_H__
 #define __CHROCODILELIBPLUGINDEF_H__
 /* Latest Git commit hash: @CHRLIB_GIT_REVID@ */
 #if (defined(_MSC_VER) && (_MSC_VER >= 1020)) || (defined(__GNUC_VERSION__) && __GNUC_VERSION__ >= 30400) || defined(__MCPP) || defined(__clang__)

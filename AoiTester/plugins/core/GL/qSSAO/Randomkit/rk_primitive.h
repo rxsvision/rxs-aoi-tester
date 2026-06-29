@@ -1,4 +1,4 @@
-/* Random kit 1.6 */
+﻿/* Random kit 1.6 */
 /* Primitivity test for binary polynomials of low degree */
 
 /*

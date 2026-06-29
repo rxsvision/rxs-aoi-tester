@@ -1,4 +1,4 @@
-
+ï»¿
 #include "dwg_api.h"
 #include "DesignFilesImport.h"
 #include <string>
@@ -16,7 +16,7 @@ CADImport::CADImport(const char* exepath)
     dllHander = 0;
     memset(&dwg, 0, sizeof(Dwg_Data));
     if (exepath != 0) {
-        //Â·¾¶ÎÄ¼þ´æÔÚÅÐ¶Ï
+        //è·¯å¾„æ–‡ä»¶å­˜åœ¨åˆ¤æ–­
         extExe = new std::string(exepath);
     }
     else {

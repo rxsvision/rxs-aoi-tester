@@ -1,4 +1,4 @@
-#include "pcfilterform.h"
+﻿#include "pcfilterform.h"
 #include "ui_pcfilterform.h"
 
 pcFilterForm::pcFilterForm(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

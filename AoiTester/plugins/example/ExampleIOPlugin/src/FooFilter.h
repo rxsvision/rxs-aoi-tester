@@ -1,4 +1,4 @@
-#ifndef CC_FOO_FILTER_HEADER
+﻿#ifndef CC_FOO_FILTER_HEADER
 #define CC_FOO_FILTER_HEADER
 
 //##########################################################################

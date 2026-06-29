@@ -1,4 +1,4 @@
-#ifndef FACPARAMSET_H
+﻿#ifndef FACPARAMSET_H
 #define FACPARAMSET_H
 
 #include <QDialog>

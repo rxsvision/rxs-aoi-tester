@@ -1,4 +1,4 @@
-#ifndef PCSRCINFORM_H
+﻿#ifndef PCSRCINFORM_H
 #define PCSRCINFORM_H
 
 #include <QWidget>

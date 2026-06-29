@@ -1,4 +1,4 @@
-#ifndef QUAZIP_GLOBAL_H
+﻿#ifndef QUAZIP_GLOBAL_H
 #define QUAZIP_GLOBAL_H
 
 /*

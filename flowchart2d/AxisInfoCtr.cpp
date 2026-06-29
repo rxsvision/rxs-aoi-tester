@@ -1,4 +1,4 @@
-#include "AxisInfoCtr.h"
+﻿#include "AxisInfoCtr.h"
 #include "qstyle.h"
 #include "ui_AxisInfoCtr.h"
 

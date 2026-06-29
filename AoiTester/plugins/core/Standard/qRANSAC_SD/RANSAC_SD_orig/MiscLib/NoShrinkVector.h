@@ -1,4 +1,4 @@
-#ifndef MiscLib__NOSHRINKVECTOR_HEADER__
+﻿#ifndef MiscLib__NOSHRINKVECTOR_HEADER__
 #define MiscLib__NOSHRINKVECTOR_HEADER__
 #include <MiscLib/AlignedAllocator.h>
 

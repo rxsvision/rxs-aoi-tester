@@ -1,4 +1,4 @@
-#ifndef GfxTL__INDEXEDITERATOR_HEADER__
+﻿#ifndef GfxTL__INDEXEDITERATOR_HEADER__
 #define GfxTL__INDEXEDITERATOR_HEADER__
 #include <iterator>
 

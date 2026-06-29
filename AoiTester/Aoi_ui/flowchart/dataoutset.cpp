@@ -1,4 +1,4 @@
-#include "dataoutset.h"
+﻿#include "dataoutset.h"
 #include "ui_dataoutset.h"
 
 DataOutSet::DataOutSet(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

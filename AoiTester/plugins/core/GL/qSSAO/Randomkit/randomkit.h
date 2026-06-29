@@ -1,4 +1,4 @@
-/* Random kit 1.6 */
+﻿/* Random kit 1.6 */
 
 /*
  * Anyone who attempts to generate random numbers by deterministic means is, 

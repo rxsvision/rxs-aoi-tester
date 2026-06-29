@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 #include <thread>
 #include <malloc.h>
 #include <string>
@@ -66,7 +66,7 @@ void imgTaskFlowerProcesser::Clear() {
 	if (tkCollection != 0) {
 		std::vector<StepBlockBase*>* tkc = (std::vector<StepBlockBase*>*)tkCollection;
 		for (size_t i = 0; i < tkc->size(); i++) {
-			//ĞèÒª¸ù¾İ¼¸ÖÖ¾ßÌåµÄÀàĞÍ delete
+			//éœ€è¦æ ¹æ®å‡ ç§å…·ä½“çš„ç±»å‹ delete
 			StepBlockBase* sbb = (*tkc)[i];
 			if (sbb != 0) {
 				delete sbb;
@@ -215,7 +215,7 @@ int imgTaskFlowerProcesser::Run() {
 					pSystemer->FrontProcessMsgSender(CBC_IMGSHOW, (void*)ri);
 				}
 				else {
-					pSystemer->FrontProcessMsgSender(CBC_STR_W_MSG, (void*)"ÎŞÓĞĞ§½á¹ûÍ¼Æ¬Êä³ö!");
+					pSystemer->FrontProcessMsgSender(CBC_STR_W_MSG, (void*)"æ— æœ‰æ•ˆç»“æœå›¾ç‰‡è¾“å‡º!");
 				}
 				break;
 			}
@@ -257,7 +257,7 @@ short imgTaskFlowerProcesser::RunAnsy() {
 		//				pSystemer->FrontProcessMsgSender(CBC_IMGSHOW, (void*)ri);
 		//			}
 		//			else {
-		//				pSystemer->FrontProcessMsgSender(CBC_STR_W_MSG, (void*)"ÎŞÓĞĞ§½á¹ûÍ¼Æ¬Êä³ö!");
+		//				pSystemer->FrontProcessMsgSender(CBC_STR_W_MSG, (void*)"æ— æœ‰æ•ˆç»“æœå›¾ç‰‡è¾“å‡º!");
 		//			}
 		//			break;
 		//		}
@@ -280,7 +280,7 @@ bool imgTaskFlowerProcesser::operator ==(imgTaskFlowerProcesser* dest) {
 	mv = (tkc->size() == dtkc->size());
 	if (!mv) { return false; }
 
-	//¸÷¸ö²½Öè¿ì Ò²ĞèÒªÍêÈ«ÏàµÈ
+	//å„ä¸ªæ­¥éª¤å¿« ä¹Ÿéœ€è¦å®Œå…¨ç›¸ç­‰
 	mv = ((*tkc) == (*dtkc));
 	if (!mv) { return false; }
 	return mv;

@@ -1,4 +1,4 @@
-#ifndef __GfxTL_MATHHELPER_HEADER__
+﻿#ifndef __GfxTL_MATHHELPER_HEADER__
 #define __GfxTL_MATHHELPER_HEADER__
 #ifndef _USE_MATH_DEFINES
 #define _USE_MATH_DEFINES

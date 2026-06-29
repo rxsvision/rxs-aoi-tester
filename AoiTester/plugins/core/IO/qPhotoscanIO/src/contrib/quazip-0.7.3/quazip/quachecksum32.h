@@ -1,4 +1,4 @@
-#ifndef QUACHECKSUM32_H
+﻿#ifndef QUACHECKSUM32_H
 #define QUACHECKSUM32_H
 
 /*

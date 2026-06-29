@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -33,6 +33,6 @@ void Anasyer(const char *path) {
         file.close();
     }
     else {
-        std::cout << "ÎÞ·¨´ò¿ªÎÄ¼þ" << std::endl;
+        std::cout << "æ— æ³•æ‰“å¼€æ–‡ä»¶" << std::endl;
     }
 }

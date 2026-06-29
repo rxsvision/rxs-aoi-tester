@@ -1,4 +1,4 @@
-#ifndef GfxTL__SCALARTYPEDEFERER_HEADER__
+﻿#ifndef GfxTL__SCALARTYPEDEFERER_HEADER__
 #define GfxTL__SCALARTYPEDEFERER_HEADER__
 #include <GfxTL/VectorXD.h>
 #include <GfxTL/Array.h>

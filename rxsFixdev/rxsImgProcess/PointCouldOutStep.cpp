@@ -1,4 +1,4 @@
-#include "private.h"
+﻿#include "private.h"
 
 
 PointCouldOutStep::PointCouldOutStep(int id) :StepBlockBase(id) {

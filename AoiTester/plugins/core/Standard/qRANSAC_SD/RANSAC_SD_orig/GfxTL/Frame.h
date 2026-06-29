@@ -1,4 +1,4 @@
-#ifndef GfxTL__FRAME_HEADER__
+﻿#ifndef GfxTL__FRAME_HEADER__
 #define GfxTL__FRAME_HEADER__
 #include <GfxTL/HyperplaneCoordinateSystem.h>
 #include <GfxTL/VectorXD.h>

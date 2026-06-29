@@ -1,4 +1,4 @@
-#ifndef MOTIONOPTER_H
+﻿#ifndef MOTIONOPTER_H
 #define MOTIONOPTER_H
 
 #include <QDialog>

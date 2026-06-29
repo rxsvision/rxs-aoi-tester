@@ -1,4 +1,4 @@
-#ifndef PLY_H
+﻿#ifndef PLY_H
 #define PLY_H
 /* ----------------------------------------------------------------------
  * RPly library, read/write PLY files

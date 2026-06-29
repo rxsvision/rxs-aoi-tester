@@ -1,4 +1,4 @@
-#include "LowStretchSphereParametrization.h"
+﻿#include "LowStretchSphereParametrization.h"
 #include "Bitmap.h"
 
 #if !defined(_WIN32) && !defined(WIN32)

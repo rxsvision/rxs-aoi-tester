@@ -1,4 +1,4 @@
-#ifndef QUA_ZIPFILE_H
+﻿#ifndef QUA_ZIPFILE_H
 #define QUA_ZIPFILE_H
 
 /*

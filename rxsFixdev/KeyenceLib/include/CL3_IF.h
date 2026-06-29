@@ -1,4 +1,4 @@
-// CL3_IF.h
+﻿// CL3_IF.h
 
 #pragma once
 #pragma managed(push, off)

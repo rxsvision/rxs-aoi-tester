@@ -1,4 +1,4 @@
-#ifndef THIRDPARTY_H
+﻿#ifndef THIRDPARTY_H
 #define THIRDPARTY_H
 
 #include <QWidget>

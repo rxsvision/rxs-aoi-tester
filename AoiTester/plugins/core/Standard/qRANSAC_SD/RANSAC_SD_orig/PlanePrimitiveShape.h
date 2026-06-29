@@ -1,4 +1,4 @@
-#ifndef PLANEPRIMITIVESHAPE_HEADER
+﻿#ifndef PLANEPRIMITIVESHAPE_HEADER
 #define PLANEPRIMITIVESHAPE_HEADER
 #include "BitmapPrimitiveShape.h"
 #include "Plane.h"

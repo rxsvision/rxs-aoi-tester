@@ -1,4 +1,4 @@
-#include "SimpleTorusParametrization.h"
+﻿#include "SimpleTorusParametrization.h"
 
 SimpleTorusParametrization::SimpleTorusParametrization(
 	const Torus &torus)

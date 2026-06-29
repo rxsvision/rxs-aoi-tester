@@ -1,4 +1,4 @@
-#ifndef QUAZIP_QUAZIPDIR_H
+﻿#ifndef QUAZIP_QUAZIPDIR_H
 #define QUAZIP_QUAZIPDIR_H
 
 /*

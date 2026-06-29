@@ -1,4 +1,4 @@
-#include "convertformatform.h"
+﻿#include "convertformatform.h"
 #include "ui_convertformatform.h"
 
 ConvertFormatForm::ConvertFormatForm(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

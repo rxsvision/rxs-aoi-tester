@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.0)
+﻿cmake_minimum_required (VERSION 3.0)
 
 if(CMAKE_VERSION VERSION_GREATER_EQUAL "3.12.0")
 	# https://cmake.org/cmake/help/git-stage/policy/CMP0074.html

@@ -1,4 +1,4 @@
-#ifndef __GfxTL_MEAN_HEADER__
+﻿#ifndef __GfxTL_MEAN_HEADER__
 #define __GfxTL_MEAN_HEADER__
 #include <GfxTL/WeightFunc.h>
 #include <GfxTL/Covariance.h>

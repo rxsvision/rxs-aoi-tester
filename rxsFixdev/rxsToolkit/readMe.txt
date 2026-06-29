@@ -1,4 +1,4 @@
-vector<double> fitBSpline_(CP cloud, bool visual=false)
+﻿vector<double> fitBSpline_(CP cloud, bool visual=false)
 输入是点云, 是否需要可视化轮廓度
 还要有配置文件conf_curve.czx
 

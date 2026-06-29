@@ -1,4 +1,4 @@
-#include "Cone.h"
+﻿#include "Cone.h"
 #include "Plane.h"
 #include "LevMarFitting.h"
 #include <MiscLib/Performance.h>

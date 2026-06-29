@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qEDL" >
     <file>images/cc_edl.png</file>
     <file>info.json</file>

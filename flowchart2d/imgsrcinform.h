@@ -1,4 +1,4 @@
-#ifndef IMGSRCINFORM_H
+﻿#ifndef IMGSRCINFORM_H
 #define IMGSRCINFORM_H
 
 #include <QWidget>

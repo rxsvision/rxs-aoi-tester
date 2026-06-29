@@ -1,4 +1,4 @@
-#include "scancodeform.h"
+﻿#include "scancodeform.h"
 #include "ui_scancodeform.h"
 #include "imgProcess.h"
 

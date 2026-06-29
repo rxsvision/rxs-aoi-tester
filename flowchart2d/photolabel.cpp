@@ -1,4 +1,4 @@
-#include "photolabel.h"
+﻿#include "photolabel.h"
 #include <QPainter>
 #include <QDebug>
 #include <QWheelEvent>

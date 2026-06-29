@@ -1,4 +1,4 @@
-#ifndef TORUS_HEADER
+﻿#ifndef TORUS_HEADER
 #define TORUS_HEADER
 #include "basic.h"
 #include <MiscLib/Vector.h>

@@ -1,4 +1,4 @@
-#include "pcoutform.h"
+﻿#include "pcoutform.h"
 #include "ui_pcoutform.h"
 
 pcOutForm::pcOutForm(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

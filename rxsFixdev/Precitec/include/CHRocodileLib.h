@@ -1,4 +1,4 @@
-/**
+﻿/**
  *  \file
  *
  *  \copyright    Copyright (C) @CHRLIB_GIT_TIME_YEAR@ by Precitec Optronik GmbH

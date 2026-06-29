@@ -1,4 +1,4 @@
-#ifndef __GfxTL_NEARESTNEIGHBORS_HEADER__
+﻿#ifndef __GfxTL_NEARESTNEIGHBORS_HEADER__
 #define __GfxTL_NEARESTNEIGHBORS_HEADER__
 #include <limits>
 #include <GfxTL/LimitedHeap.h>

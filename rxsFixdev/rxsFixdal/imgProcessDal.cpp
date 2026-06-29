@@ -1,4 +1,4 @@
-
+ï»¿
 #include "../rxsImgProcess/imgProcess.h"
 #include "protected.h"
 
@@ -10,24 +10,24 @@ short imgToolKitBlockExt::runProcessActiver(rxsImg* inimg, int nums, rxsResultRe
 	int errcode = 0;
 	try {
 		std::string tn = Fname;
-		if (tn == "¹â¶ÈÁ¢Ìå·¨") {
+		if (tn == "å…‰åº¦ç«‹ä½“æ³•") {
 
 				errcode = PhotometricDefectDetection(Fname, rr);
 			
 		}
-		else if (tn == "ÑÕÉ«Ê¶±ğ") {
+		else if (tn == "é¢œè‰²è¯†åˆ«") {
 
 				errcode = ColorIdentify(Fname, rr);
 			
 		}
-		else if (tn == "QR¶ÁÂë") {
+		else if (tn == "QRè¯»ç ") {
 
 				errcode = QRCodeProcess(inimg, rr);
 			
 		}
 	}
 	catch (std::exception& ec) {
-		std::string msg = "runProcessActiver-Òì³£\r\n";
+		std::string msg = "runProcessActiver-å¼‚å¸¸\r\n";
 		msg += ec.what();
 		return -100;
 	}
@@ -42,8 +42,8 @@ short imgToolKitBlockExt::QRCodeProcess(rxsImg* img, rxsResultReport* rpp) {
 	unsigned Len = 0;
 	codeReader.Reader(imgTool_CodeDataReader::QR, Len);
 	if (Len > 0) {
-		std::string filed[2] = { "ID","ÌõÂë" };
-		rpp->SetFiled(filed, 2, "ÌõÂëÄÚÈİ");
+		std::string filed[2] = { "ID","æ¡ç " };
+		rpp->SetFiled(filed, 2, "æ¡ç å†…å®¹");
 		char buff[20];
 		int row = 0;
 		for (unsigned x = 0; x < Len; x++) {
@@ -54,7 +54,7 @@ short imgToolKitBlockExt::QRCodeProcess(rxsImg* img, rxsResultReport* rpp) {
 				sprintf_s(buff, "%d", row);
 				row -= 1;
 				rpp->SetValue("ID", buff, row);
-				rpp->SetValue("ÌõÂë", v, row);
+				rpp->SetValue("æ¡ç ", v, row);
 				drawPanel.Rectangle(pos[0], pos[3]);
 				drawPanel.Save("qrFinsh.jpg");
 			}
@@ -86,7 +86,7 @@ int imgToolKitBlockExt::ColorIdentify(const char* ctkName, rxsResultReport* rr) 
 		inimg.Channels = 1;
 		inimg.Data = malloc(pnum);
 		if (inimg.Data == 0) {
-			//SysLogRecord("PhotometricDefectDetection-Í¼Æ¬ÄÚ´æ·ÖÅäÊ§°Ü!");
+			//SysLogRecord("PhotometricDefectDetection-å›¾ç‰‡å†…å­˜åˆ†é…å¤±è´¥!");
 			return -98;
 		}
 		memcpy(inimg.Data, data, pnum);
@@ -126,7 +126,7 @@ int imgToolKitBlockExt::PhotometricDefectDetection(const char* ctkName, rxsResul
 		inimg[x].Channels = 1;
 		inimg[x].Data = malloc(pnum);
 		if (inimg[x].Data == 0) {
-			//SysLogRecord("PhotometricDefectDetection-Í¼Æ¬ÄÚ´æ·ÖÅäÊ§°Ü!");
+			//SysLogRecord("PhotometricDefectDetection-å›¾ç‰‡å†…å­˜åˆ†é…å¤±è´¥!");
 			return -98;
 		}
 		memcpy(inimg[x].Data, data, pnum);

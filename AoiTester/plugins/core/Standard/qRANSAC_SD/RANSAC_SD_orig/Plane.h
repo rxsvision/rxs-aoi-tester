@@ -1,4 +1,4 @@
-#ifndef _PLANE_H_
+﻿#ifndef _PLANE_H_
 #define _PLANE_H_
 #include "basic.h"
 #include <MiscLib/Vector.h>

@@ -1,4 +1,4 @@
-#ifndef CYLINDERPRIMITIVESHAPE_HEADER
+﻿#ifndef CYLINDERPRIMITIVESHAPE_HEADER
 #define CYLINDERPRIMITIVESHAPE_HEADER
 #include "BitmapPrimitiveShape.h"
 #include "Cylinder.h"

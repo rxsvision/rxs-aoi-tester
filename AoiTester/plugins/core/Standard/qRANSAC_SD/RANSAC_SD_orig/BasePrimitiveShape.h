@@ -1,4 +1,4 @@
-#ifndef BASEPRIMITIVESHAPE_HEADER
+﻿#ifndef BASEPRIMITIVESHAPE_HEADER
 #define BASEPRIMITIVESHAPE_HEADER
 #include "PrimitiveShape.h"
 #include "ScoreComputer.h"

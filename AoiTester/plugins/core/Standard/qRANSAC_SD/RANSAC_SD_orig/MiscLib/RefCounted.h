@@ -1,4 +1,4 @@
-#ifndef MiscLib__REFCOUNTED_HEADER__
+﻿#ifndef MiscLib__REFCOUNTED_HEADER__
 #define MiscLib__REFCOUNTED_HEADER__
 #ifdef DOPARALLEL
 #include <omp.h>

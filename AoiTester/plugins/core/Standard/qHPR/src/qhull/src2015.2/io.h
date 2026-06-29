@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-io.htm"
+﻿/*<html><pre>  -<a                             href="qh-io.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    io.h

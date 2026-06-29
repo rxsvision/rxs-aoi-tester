@@ -1,4 +1,4 @@
-#include "imgsrcinform.h"
+﻿#include "imgsrcinform.h"
 #include "ui_imgsrcinform.h"
 #include "imgProcess.h"
 #include "rxsFixdal.h"

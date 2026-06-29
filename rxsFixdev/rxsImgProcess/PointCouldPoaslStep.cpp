@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 extern HrdWrkSyetemEnv hrdSyetemEnver;
 
 
@@ -72,12 +72,12 @@ short PointCouldPoaslStep::Run() {
 	if (ce->pNums < 1 || ce->Entiy == 0) { return -5003; }
 	rr.clear();
 	if (p->tp_s_or_l == 1) {
-		std::string fileds[] = { "ID","±àºÅ","ÏßÂÖÀª¶È","PASS" };
-		rr.SetFiled(fileds, 5, "ÂÖÀª¶È²âÁ¿");
+		std::string fileds[] = { "ID","ç¼–å·","çº¿è½®å»“åº¦","PASS" };
+		rr.SetFiled(fileds, 5, "è½®å»“åº¦æµ‹é‡");
 	}
 	else if (p->tp_s_or_l == 2) {
-		std::string fileds[] = { "ID","±àºÅ","ÃæÂÖÀª¶È","PASS" };
-		rr.SetFiled(fileds, 5, "ÂÖÀª¶È²âÁ¿");
+		std::string fileds[] = { "ID","ç¼–å·","é¢è½®å»“åº¦","PASS" };
+		rr.SetFiled(fileds, 5, "è½®å»“åº¦æµ‹é‡");
 		hrdSyetemEnver.rtk->surfaceProfile(ce->Entiy, ce->pNums, &rr);
 	}
 	return 0;

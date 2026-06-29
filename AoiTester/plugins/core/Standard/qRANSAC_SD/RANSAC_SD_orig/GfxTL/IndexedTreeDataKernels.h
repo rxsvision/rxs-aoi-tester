@@ -1,4 +1,4 @@
-#ifndef GfxTL__INDEXEDTREEDATAKERNELS_HEADER__
+﻿#ifndef GfxTL__INDEXEDTREEDATAKERNELS_HEADER__
 #define GfxTL__INDEXEDTREEDATAKERNELS_HEADER__
 #include <GfxTL/IndexedIterator.h>
 #include <GfxTL/Swap.h>

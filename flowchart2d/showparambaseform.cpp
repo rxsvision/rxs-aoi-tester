@@ -1,4 +1,4 @@
-#include "showparambaseform.h"
+﻿#include "showparambaseform.h"
 #include "ui_showparambaseform.h"
 #include <iostream>
 

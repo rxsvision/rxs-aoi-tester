@@ -1,4 +1,4 @@
-#ifndef GfxTL__MAXNORM_HEADER__
+﻿#ifndef GfxTL__MAXNORM_HEADER__
 #define GfxTL__MAXNORM_HEADER__
 #include <GfxTL/MathHelper.h>
 #include <GfxTL/ScalarTypeConversion.h>

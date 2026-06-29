@@ -1,4 +1,4 @@
-#ifndef GRID_HEADER
+﻿#ifndef GRID_HEADER
 #define GRID_HEADER
 
 #include <unordered_map>

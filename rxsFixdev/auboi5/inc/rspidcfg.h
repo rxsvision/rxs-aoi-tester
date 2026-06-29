@@ -1,4 +1,4 @@
-#ifndef RSPIDCFG_H
+﻿#ifndef RSPIDCFG_H
 #define RSPIDCFG_H
 #include "rstype.h"
 #include "AuboRobotMetaType.h"

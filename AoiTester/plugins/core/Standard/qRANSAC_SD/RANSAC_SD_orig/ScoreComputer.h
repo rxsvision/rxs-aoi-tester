@@ -1,4 +1,4 @@
-#ifndef SCORECOMPUTER_HEADER
+﻿#ifndef SCORECOMPUTER_HEADER
 #define SCORECOMPUTER_HEADER
 #include <GfxTL/NullClass.h>
 #ifndef _USE_MATH_DEFINES

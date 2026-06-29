@@ -1,4 +1,4 @@
-#ifndef QUA_ZIPNEWINFO_H
+﻿#ifndef QUA_ZIPNEWINFO_H
 #define QUA_ZIPNEWINFO_H
 
 /*

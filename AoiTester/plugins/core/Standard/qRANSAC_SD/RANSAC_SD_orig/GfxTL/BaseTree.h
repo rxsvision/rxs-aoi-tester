@@ -1,4 +1,4 @@
-#ifndef GfxTL_BASETREE_HEADER__
+﻿#ifndef GfxTL_BASETREE_HEADER__
 #define GfxTL_BASETREE_HEADER__
 #include <vector>
 #include <utility>

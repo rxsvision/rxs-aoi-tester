@@ -1,4 +1,4 @@
-#ifndef AXISINFOCTR_H
+﻿#ifndef AXISINFOCTR_H
 #define AXISINFOCTR_H
 
 #include <QWidget>

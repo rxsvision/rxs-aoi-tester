@@ -1,4 +1,4 @@
-#ifndef RSTYPE_H
+﻿#ifndef RSTYPE_H
 #define RSTYPE_H
 
 #ifdef __cplusplus

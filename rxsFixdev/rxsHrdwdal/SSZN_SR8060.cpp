@@ -1,4 +1,4 @@
-#include "rxsHrdwdal.h"
+ï»¿#include "rxsHrdwdal.h"
 #include "proteced.h"
 #include <string>
 #include <iostream>
@@ -24,9 +24,9 @@ SSZN_SR8060::SSZN_SR8060() {
     memset(CtrInfo, 0, sizeof(ControlInfo));
     mDispH = 2000;
     bCamBOnline = false;
-    mProfileData = 0;//Åú´¦ÀíÊı¾İ»º´æ--µ±Ç°ÏÔÊ¾·¶Î§
-    mIntensityData = 0;//»Ò¶ÈÊı¾İ»º´æ
-    mEncoderData = 0;//±àÂëÆ÷Êı¾İ»º´æ
+    mProfileData = 0;//æ‰¹å¤„ç†æ•°æ®ç¼“å­˜--å½“å‰æ˜¾ç¤ºèŒƒå›´
+    mIntensityData = 0;//ç°åº¦æ•°æ®ç¼“å­˜
+    mEncoderData = 0;//ç¼–ç å™¨æ•°æ®ç¼“å­˜
     H_Up = 100;
     H_Down = -100;
     HOffset = 0;
@@ -70,7 +70,7 @@ short SSZN_SR8060::open(const char* tsPath) {
     if (cps.size() > 1) {
         LoadCfg(cps[1].c_str());
     }
-    //Ïà»úBÊÇ·ñÔÚÏß
+    //ç›¸æœºBæ˜¯å¦åœ¨çº¿
     reT = SR7IF_GetOnlineCameraB(Sensorinfo.ID);
     if (reT == 0)
     {
@@ -111,7 +111,7 @@ short SSZN_SR8060::open(const char* tsPath) {
 
 void SSZN_SR8060::close() {
     bCamBOnline = false;
-    //Í£Ö¹Åú´¦Àí
+    //åœæ­¢æ‰¹å¤„ç†
     reT = SR7IF_StopMeasure(Sensorinfo.ID);
     reT = SR7IF_CommClose(Sensorinfo.ID);
 }
@@ -126,23 +126,23 @@ bool SSZN_SR8060::grabContinuity(bool isAnsy, int gCount) {
     PCResult.clear();
     HOffset = 0;
     if (Sensorinfo.Mode == 0) {
-        //·ÇIOÏÂµÄ´¥·¢
+        //éIOä¸‹çš„è§¦å‘
         reT = SR7IF_StartMeasure(Sensorinfo.ID);
     }
     else if (Sensorinfo.Mode == 1) {
-        //Íâ²¿IO´¥·¢
+        //å¤–éƒ¨IOè§¦å‘
         reT = SR7IF_StartIOTriggerMeasure(Sensorinfo.ID, gCount);
     }
     else if (Sensorinfo.Mode == 2)
     {
-        //»Øµ÷·½Ê½
+        //å›è°ƒæ–¹å¼
         //reT = SR7IF_SetBatchOneTimeDataHandler(Sensorinfo.ID, BatchOneTimeCallBack);
         //reT = SR7IF_TriggerOneBatch(Sensorinfo.ID);
     }
     else if (Sensorinfo.Mode == 3) {
-        //»Øµ÷·½Ê½
+        //å›è°ƒæ–¹å¼
         //reT = SR7IF_SetBatchOneTimeDataHandler(Sensorinfo.ID, BatchOneTimeCallBack);
-        //int m_BatchWait = 1;//Á¢¼´¿ªÊ¼´¦Àí£¬=1 Íâ²¿´¥·¢ĞÅºÅ²Å¿ªÊ¼´¦Àí
+        //int m_BatchWait = 1;//ç«‹å³å¼€å§‹å¤„ç†ï¼Œ=1 å¤–éƒ¨è§¦å‘ä¿¡å·æ‰å¼€å§‹å¤„ç†
         //reT = SR7IF_StartMeasureWithCallback(Sensorinfo.ID, m_BatchWait);
     }
     return (reT == 0);
@@ -154,12 +154,12 @@ bool SSZN_SR8060::ResetConnect() {
 }
 
 void SSZN_SR8060::GetSensorparam() {
-    //Åú´¦ÀíĞĞÊı¡¢ÂÖÀª¿í¶È¡¢X¼ä¾à»ñÈ¡
+    //æ‰¹å¤„ç†è¡Œæ•°ã€è½®å»“å®½åº¦ã€Xé—´è·è·å–
     int mBatchH = SR7IF_ProfilePointSetCount(Sensorinfo.ID, NULL);
     CtrInfo->Width = SR7IF_ProfileDataWidth(Sensorinfo.ID, NULL);
     CtrInfo->vfRate = SR7IF_ProfileData_XPitch(Sensorinfo.ID, NULL);
 
-    const char* _version = SR7IF_GetModels(Sensorinfo.ID);   //ĞÍºÅ»ñÈ¡
+    const char* _version = SR7IF_GetModels(Sensorinfo.ID);   //å‹å·è·å–
     std::string str_Version;
     str_Version = _version;
     double m_dHeightRange = 1500;
@@ -275,35 +275,35 @@ void SSZN_SR8060::resultConvert(int* pd, unsigned lineNums) {
 
 
 int SSZN_SR8060::IsCollectionCompleted(unsigned int gCount) {
-    int mEncoderN = 1;//Ö÷¿ØÒ»¸öÏà»úA
-    int mTmpH = 1000;//ĞĞÊıÓ¦ÉèÖÃÎªĞ¡ÓÚÏÔÊ¾µÄ¸ß¶ÈmDispH
-    int* TmpBatchPoint = new int[mTmpH * CtrInfo->Width];//µ±Ç°Åú´Î¸ß¶ÈÊı¾İ»º´æ
-    unsigned char* TmpGrayData = new unsigned char[mTmpH * CtrInfo->Width];//µ±Ç°Åú´Î»Ò¶ÈÊı¾İ»º´æ
-    unsigned int* FrameLoss = new unsigned int[mTmpH * mEncoderN];//Åú´¦Àí¹ı¿ìµôÖ¡ÊıÁ¿Êı¾İ»º´æ
-    long long* FrameId = new long long[mTmpH];//Ö¡±àºÅÊı¾İ»º´æ
-    unsigned int* Encoder = new unsigned int[mTmpH * mEncoderN];//±àÂëÆ÷Êı¾İ»º´æ
-    long long BatchPoint_CurNo = 0;     //µ±Ç°Åú´¦Àí±àºÅ
-    long long OverFlowStartId = 0;      //Òç³öÆğÊ¼Ö¡ºÅ
-    long long m_BatchPoint_CurNo = 0;   //µ±Ç°×ÜĞĞÊı
-    int FrameLossID = 0;                //¶ªÖ¡Êı
-    int EncoderID = 0;                  //±àÂëÆ÷Öµ
+    int mEncoderN = 1;//ä¸»æ§ä¸€ä¸ªç›¸æœºA
+    int mTmpH = 1000;//è¡Œæ•°åº”è®¾ç½®ä¸ºå°äºæ˜¾ç¤ºçš„é«˜åº¦mDispH
+    int* TmpBatchPoint = new int[mTmpH * CtrInfo->Width];//å½“å‰æ‰¹æ¬¡é«˜åº¦æ•°æ®ç¼“å­˜
+    unsigned char* TmpGrayData = new unsigned char[mTmpH * CtrInfo->Width];//å½“å‰æ‰¹æ¬¡ç°åº¦æ•°æ®ç¼“å­˜
+    unsigned int* FrameLoss = new unsigned int[mTmpH * mEncoderN];//æ‰¹å¤„ç†è¿‡å¿«æ‰å¸§æ•°é‡æ•°æ®ç¼“å­˜
+    long long* FrameId = new long long[mTmpH];//å¸§ç¼–å·æ•°æ®ç¼“å­˜
+    unsigned int* Encoder = new unsigned int[mTmpH * mEncoderN];//ç¼–ç å™¨æ•°æ®ç¼“å­˜
+    long long BatchPoint_CurNo = 0;     //å½“å‰æ‰¹å¤„ç†ç¼–å·
+    long long OverFlowStartId = 0;      //æº¢å‡ºèµ·å§‹å¸§å·
+    long long m_BatchPoint_CurNo = 0;   //å½“å‰æ€»è¡Œæ•°
+    int FrameLossID = 0;                //ä¸¢å¸§æ•°
+    int EncoderID = 0;                  //ç¼–ç å™¨å€¼
 
     bool bError = false;
     do {
         //SR7IF_SetBatchRollProfilePoint
-        /* ½ÓÊÕÊı¾İ---µ±Ç°Åú´Î¸ß¶ÈÊı¾İ¡¢»Ò¶ÈÊı¾İ¡¢±àÂëÆ÷Êı¾İ¡¢Ö¡±àºÅ¡¢µôÖ¡ÊıÁ¿Êı¾İ */
+        /* æ¥æ”¶æ•°æ®---å½“å‰æ‰¹æ¬¡é«˜åº¦æ•°æ®ã€ç°åº¦æ•°æ®ã€ç¼–ç å™¨æ•°æ®ã€å¸§ç¼–å·ã€æ‰å¸§æ•°é‡æ•°æ® */
         int m_curBatchPoint = SR7IF_GetBatchRollData(Sensorinfo.ID, NULL, TmpBatchPoint, TmpGrayData, Encoder, FrameId, FrameLoss, 500);
         if (m_curBatchPoint < 0)
         {
             if (m_curBatchPoint == SR7IF_ERROR_MODE)
             {
-                //setTextInfo(_T("µ±Ç°Îª·ÇÑ­»·Ä£Ê½"));
+                //setTextInfo(_T("å½“å‰ä¸ºéå¾ªç¯æ¨¡å¼"));
                 bError = true;
                 break;
             }
             else if (m_curBatchPoint == SR7IF_NORMAL_STOP)
             {
-                //setTextInfo(_T("Íâ²¿IO»òÆäËûÒòËØµ¼ÖÂÅú´¦ÀíÕı³£Í£Ö¹"));
+                //setTextInfo(_T("å¤–éƒ¨IOæˆ–å…¶ä»–å› ç´ å¯¼è‡´æ‰¹å¤„ç†æ­£å¸¸åœæ­¢"));
                 bError = true;
                 break;
             }
@@ -317,7 +317,7 @@ int SSZN_SR8060::IsCollectionCompleted(unsigned int gCount) {
                 SR7IF_GetBatchRollError(0, &EthErrCnt, &UserErrCnt);
                 if (m_curBatchPoint == SR7IF_ERROR_ROLL_DATA_OVERFLOW)
                 {
-                    //strTmp.Format(_T("Êı¾İ»ñÈ¡¹ıÂı£¬Êı¾İ¸²¸Ç.ÍøÂçÔ­ÒòÒç³öÁ¿ %d, ÓÃ»§Ô­ÒòÒç³öÁ¿ %d, Òç³öÆğÊ¼Ö¡ºÅ %d£¬ ¶ªÖ¡Êı %d  ±àÂëÆ÷Öµ %d"),
+                    //strTmp.Format(_T("æ•°æ®è·å–è¿‡æ…¢ï¼Œæ•°æ®è¦†ç›–.ç½‘ç»œåŸå› æº¢å‡ºé‡ %d, ç”¨æˆ·åŸå› æº¢å‡ºé‡ %d, æº¢å‡ºèµ·å§‹å¸§å· %dï¼Œ ä¸¢å¸§æ•° %d  ç¼–ç å™¨å€¼ %d"),
                     //    EthErrCnt, UserErrCnt, OverFlowStartId, FrameLossID, EncoderID);
                 }
                 else if (m_curBatchPoint == SR7IF_ERROR_ROLL_BUSY)
@@ -333,13 +333,13 @@ int SSZN_SR8060::IsCollectionCompleted(unsigned int gCount) {
 
         resultConvert(TmpBatchPoint, m_curBatchPoint);
 
-        ////ÉÏÒ»´Î×îºóÒ»ĞĞ¶ÔÓ¦µÄÖ¡µÈĞÅÏ¢
+        ////ä¸Šä¸€æ¬¡æœ€åä¸€è¡Œå¯¹åº”çš„å¸§ç­‰ä¿¡æ¯
         //int TmpID = m_curBatchPoint - 1;
         //OverFlowStartId = FrameId[TmpID];
         //FrameLossID = FrameLoss[TmpID];
         //EncoderID = Encoder[TmpID];
 
-        ////Êı¾İ¿½±´ÏÔÊ¾
+        ////æ•°æ®æ‹·è´æ˜¾ç¤º
         //int TmpN = m_curBatchPoint * CtrInfo->Width;
         //if (BatchPoint_CurNo < mDispH)
         //{
@@ -347,33 +347,33 @@ int SSZN_SR8060::IsCollectionCompleted(unsigned int gCount) {
         //    {
         //        int TMPP = int(CtrInfo->Width * (mDispH - BatchPoint_CurNo));
 
-        //        /* ¸ß¶È */
+        //        /* é«˜åº¦ */
         //        memcpy(&mProfileData[BatchPoint_CurNo * CtrInfo->Width], TmpBatchPoint, sizeof(int) * TMPP);
 
-        //        ///* »Ò¶È */
+        //        ///* ç°åº¦ */
         //        //memcpy(&mIntensityData[BatchPoint_CurNo * CtrInfo->Width], TmpGrayData, TMPP);
 
-        //        ///* ±àÂëÆ÷ */
+        //        ///* ç¼–ç å™¨ */
         //        //memcpy(&mEncoderData[BatchPoint_CurNo * mEncoderN], Encoder,sizeof(unsigned int) * (mDispH - BatchPoint_CurNo) * mEncoderN);
 
-        //        //ÏÔÊ¾ mDispH - BatchPoint_CurNo ĞĞÊı¾İ
+        //        //æ˜¾ç¤º mDispH - BatchPoint_CurNo è¡Œæ•°æ®
         //        resultConvert();
 
 
-        //        //¶à³öµÄĞĞÊıÖØĞÂÅÅÁĞ
+        //        //å¤šå‡ºçš„è¡Œæ•°é‡æ–°æ’åˆ—
         //        int TMPPT = int(BatchPoint_CurNo + m_curBatchPoint - mDispH);
         //        int TTTT = TMPPT * CtrInfo->Width;
         //        int Tmpx = (mDispH - TMPPT) * CtrInfo->Width;
 
-        //        /* ¸ß¶È */
+        //        /* é«˜åº¦ */
         //        memcpy(&mProfileData[0], &mProfileData[TTTT], sizeof(int) * Tmpx);
         //        memcpy(&mProfileData[Tmpx], &TmpBatchPoint[TMPP], sizeof(int) * TTTT);
 
-        //        ///* »Ò¶È */
+        //        ///* ç°åº¦ */
         //        //memcpy(&mIntensityData[0], &mIntensityData[TTTT], Tmpx);
         //        //memcpy(&mIntensityData[Tmpx], &TmpGrayData[TMPP], TTTT);
 
-        //        ///* ±àÂëÆ÷ */
+        //        ///* ç¼–ç å™¨ */
         //        //memcpy(&mEncoderData[0], &mEncoderData[TMPPT * mEncoderN],(mDispH - TMPPT) * mEncoderN * sizeof(unsigned int));
         //        //memcpy(&mEncoderData[(mDispH - TMPPT) * mEncoderN],&Encoder[(mDispH - BatchPoint_CurNo) * mEncoderN],TMPPT * mEncoderN * sizeof(unsigned int));
 
@@ -382,30 +382,30 @@ int SSZN_SR8060::IsCollectionCompleted(unsigned int gCount) {
         //        BatchPoint_CurNo += m_curBatchPoint;
         //        m_BatchPoint_CurNo = BatchPoint_CurNo;
 
-        //        //ÏÔÊ¾µ±Ç°½ÓÊÕµÄ×ÜĞĞÊı
-        //        //strTotalC.Format(_T("µ±Ç°×ÜĞĞÊı:%d"), m_BatchPoint_CurNo);
+        //        //æ˜¾ç¤ºå½“å‰æ¥æ”¶çš„æ€»è¡Œæ•°
+        //        //strTotalC.Format(_T("å½“å‰æ€»è¡Œæ•°:%d"), m_BatchPoint_CurNo);
         //        continue;
         //    }
 
-        //    /* ¸ß¶È */
+        //    /* é«˜åº¦ */
         //    memcpy(&mProfileData[BatchPoint_CurNo * CtrInfo->Width], TmpBatchPoint, sizeof(int) * TmpN);
-        //    ///* »Ò¶È */
+        //    ///* ç°åº¦ */
         //    //memcpy(&mIntensityData[BatchPoint_CurNo * CtrInfo->Width], TmpGrayData, TmpN);
-        //    ///* ±àÂëÆ÷ */
+        //    ///* ç¼–ç å™¨ */
         //    //memcpy(&mEncoderData[BatchPoint_CurNo * mEncoderN], Encoder,m_curBatchPoint * mEncoderN * sizeof(unsigned int));
         //}
         //else
         //{
-        //    /* ÖØĞÂÅÅÁĞ */
+        //    /* é‡æ–°æ’åˆ— */
         //    int TTTT = (mDispH - m_curBatchPoint) * CtrInfo->Width;
         //    memcpy(&mProfileData[0], &mProfileData[TmpN], sizeof(int) * TTTT);
         //    memcpy(&mProfileData[TTTT], TmpBatchPoint, sizeof(int) * TmpN);
 
-        //    ///* »Ò¶È */
+        //    ///* ç°åº¦ */
         //    //memcpy(&mIntensityData[0], &mIntensityData[TmpN], TTTT);
         //    //memcpy(&mIntensityData[TTTT], TmpGrayData, TmpN);
 
-        //    ///* ±àÂëÆ÷ */
+        //    ///* ç¼–ç å™¨ */
         //    //memcpy(&mEncoderData[0], &mEncoderData[m_curBatchPoint * mEncoderN], sizeof(unsigned int) * (mDispH - m_curBatchPoint));
         //    //memcpy(&mIntensityData[(mDispH - m_curBatchPoint) * mEncoderN], Encoder, sizeof(unsigned int) * m_curBatchPoint * mEncoderN);
         //}
@@ -415,13 +415,13 @@ int SSZN_SR8060::IsCollectionCompleted(unsigned int gCount) {
         //BatchPoint_CurNo += m_curBatchPoint;
         //m_BatchPoint_CurNo = BatchPoint_CurNo;
 
-        //ÏÔÊ¾µ±Ç°½ÓÊÕµÄ×ÜĞĞÊı
-        //strTotalC.Format(_T("µ±Ç°×ÜĞĞÊı:%d"), m_BatchPoint_CurNo);
+        //æ˜¾ç¤ºå½“å‰æ¥æ”¶çš„æ€»è¡Œæ•°
+        //strTotalC.Format(_T("å½“å‰æ€»è¡Œæ•°:%d"), m_BatchPoint_CurNo);
 
         std::this_thread::sleep_for(std::chrono::milliseconds(5));
     } while (true);
 
-    if (bError)  //Òò´íÎóµ¼ÖÂÑ­»·ÍË³ö
+    if (bError)  //å› é”™è¯¯å¯¼è‡´å¾ªç¯é€€å‡º
     {
         SR7IF_StopMeasure(Sensorinfo.ID);
     }
@@ -482,7 +482,7 @@ void SSZN_SR8060::CoordinateConvert() {
 }
 
 /// <summary>
-/// wich ×î¸ßÎ» bit7 Ö¸³ö ÊÇ·ñÖÕµã,ÆäËûÎ»Ö¸Ê¾ÊÇÄÄÒ»¸öÖá
+/// wich æœ€é«˜ä½ bit7 æŒ‡å‡º æ˜¯å¦ç»ˆç‚¹,å…¶ä»–ä½æŒ‡ç¤ºæ˜¯å“ªä¸€ä¸ªè½´
 /// </summary>
 bool SSZN_SR8060::WorldCoordinateSet(u8 wich, float x, float y, float z) {
     return true;
@@ -517,7 +517,7 @@ void SSZN_SR8060::LoadCfg(const char* path)
 //    {
 //        //DataCallModel->mBatchTimes++;
 //    }
-//    //¸ß¶ÈÊı¾İ»ñÈ¡--Ïà»úA
+//    //é«˜åº¦æ•°æ®è·å–--ç›¸æœºA
 //    const int* mTmpData = SR7IF_GetBatchProfilePoint(data, 0);
 //    int mNumP = conInfo->BatchPoints * conInfo->xPoints;
 //    if (mTmpData != NULL)
@@ -527,7 +527,7 @@ void SSZN_SR8060::LoadCfg(const char* path)
 //        pcResult.push_back(catchPoints);
 //    }
 //
-//    //»Ò¶ÈÊı¾İ»ñÈ¡--Ïà»úA
+//    //ç°åº¦æ•°æ®è·å–--ç›¸æœºA
 //    int mNumG = sizeof(unsigned char) * conInfo->BatchPoints * conInfo->xPoints;
 //    const unsigned char* mTmpGraydata = SR7IF_GetBatchIntensityPoint(data, 0);
 //    if (mTmpGraydata != NULL)
@@ -536,7 +536,7 @@ void SSZN_SR8060::LoadCfg(const char* path)
 //        //memcpy(&DataCallModel->mIntensityData[0][0], &mTmpGraydata[0], mNumG);
 //    }
 //
-//    //±àÂëÆ÷Êı¾İ»ñÈ¡--Ïà»úA
+//    //ç¼–ç å™¨æ•°æ®è·å–--ç›¸æœºA
 //    int mNumE = sizeof(unsigned int) * conInfo->BatchPoints;
 //    const unsigned int* mTmpEncoderdata = SR7IF_GetBatchEncoderPoint(data, 0);
 //    if (mTmpEncoderdata != NULL)

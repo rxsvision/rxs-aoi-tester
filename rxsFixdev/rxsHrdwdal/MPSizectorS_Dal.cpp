@@ -1,4 +1,4 @@
-#include "rxsHrdwdal.h"
+﻿#include "rxsHrdwdal.h"
 #include "proteced.h"
 #include <iostream>
 #include <stdio.h>

@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qCanupoPlugin">
     <file>iconClassify.png</file>
     <file>iconCreate.png</file>

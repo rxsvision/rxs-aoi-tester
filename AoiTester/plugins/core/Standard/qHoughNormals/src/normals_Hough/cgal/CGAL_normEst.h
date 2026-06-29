@@ -1,4 +1,4 @@
-/* License Information
+﻿/* License Information
  *
  * Copyright (C) 2012 Boulch Alexandre, Ecole Nationale des Ponts et Chaussees -
  * Ecole des Ponts ParisTech

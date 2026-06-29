@@ -1,4 +1,4 @@
-#ifndef __GfxTL_WEIGHTFUNC_HEADER__
+﻿#ifndef __GfxTL_WEIGHTFUNC_HEADER__
 #define __GfxTL_WEIGHTFUNC_HEADER__
 #include <iterator>
 #include <GfxTL/MathHelper.h>

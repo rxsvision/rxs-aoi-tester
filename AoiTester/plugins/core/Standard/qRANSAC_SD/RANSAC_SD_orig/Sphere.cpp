@@ -1,4 +1,4 @@
-#include "Sphere.h"
+﻿#include "Sphere.h"
 #include <MiscLib/Performance.h>
 #include <GfxTL/IndexedIterator.h>
 #include <GfxTL/MathHelper.h>

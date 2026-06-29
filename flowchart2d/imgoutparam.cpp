@@ -1,4 +1,4 @@
-#include "imgoutparam.h"
+﻿#include "imgoutparam.h"
 #include "ui_imgoutparam.h"
 #include <QFileDialog>
 #include "imgProcess.h"

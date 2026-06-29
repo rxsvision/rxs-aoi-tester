@@ -1,4 +1,4 @@
-#ifndef BUNDLERCOMMAND_H
+﻿#ifndef BUNDLERCOMMAND_H
 #define BUNDLERCOMMAND_H
 
 //##########################################################################

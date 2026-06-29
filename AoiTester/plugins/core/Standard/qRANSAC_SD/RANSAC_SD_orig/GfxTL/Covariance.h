@@ -1,4 +1,4 @@
-#ifndef __GfxTL_COVARIANCE_HEADER__
+﻿#ifndef __GfxTL_COVARIANCE_HEADER__
 #define __GfxTL_COVARIANCE_HEADER__
 #include <GfxTL/WeightFunc.h>
 #include <GfxTL/ScalarTypeDeferer.h>

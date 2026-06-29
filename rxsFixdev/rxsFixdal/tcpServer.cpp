@@ -1,4 +1,4 @@
-#include "tcpServer.h"
+ï»¿#include "tcpServer.h"
 
 
 
@@ -7,7 +7,7 @@ tcpServer::tcpServer() {
 
 	WSADATA wsaData;
 	if (WSAStartup(MAKEWORD(2, 2), &wsaData)) {
-		std::cout << "WinSock²»ÄÜ±»³õÊ¼»¯" << std::endl;
+		std::cout << "WinSockä¸èƒ½è¢«åˆå§‹åŒ–" << std::endl;
 		WSACleanup();
 		return;
 	}
@@ -52,7 +52,7 @@ void tcpServer::clientAccpectThread() {
 		}
 		else {
 			std::string c = inet_ntoa(cur_client_addr.sin_addr);
-			std::cout << "Á¬½Ó³É¹¦ => from:" << c << std::endl;
+			std::cout << "è¿žæŽ¥æˆåŠŸ => from:" << c << std::endl;
 			std::string key = c.append(":").append(std::to_string(cur_client_addr.sin_port));
 
 			clientSession cs;
@@ -103,24 +103,24 @@ void tcpServer::Close() {
 
 
 bool tcpServer::Creater(const char* locip, unsigned short locPort) {
-	SOCKADDR_IN server_addr;//Ê¹ÓÃ½á¹¹Ìå SOCKADDR_IN ´æ´¢ÅäÖÃ
-	//memset(&server_addr, 0, sizeof(server_addr)); //ÇåÁã
+	SOCKADDR_IN server_addr;//ä½¿ç”¨ç»“æž„ä½“ SOCKADDR_IN å­˜å‚¨é…ç½®
+	//memset(&server_addr, 0, sizeof(server_addr)); //æ¸…é›¶
 	server_addr.sin_family = AF_INET;
 
 	if (locip == 0) {
 		server_addr.sin_addr.s_addr = INADDR_ANY;
 	}
 	else {
-		server_addr.sin_addr.s_addr = inet_addr(locip); //server¶ËipµØÖ·
+		server_addr.sin_addr.s_addr = inet_addr(locip); //serverç«¯ipåœ°å€
 	}
-	server_addr.sin_port = htons(locPort); //¼àÌý¶Ë¿Ú
+	server_addr.sin_port = htons(locPort); //ç›‘å¬ç«¯å£
 
-	ULONG noblock = 1;            //·Ç×èÈû²ÎÊý
+	ULONG noblock = 1;            //éžé˜»å¡žå‚æ•°
 	server = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
 	bind(server, (SOCKADDR*)&server_addr, sizeof(SOCKADDR));
 	listen(server, 10);
-	std::cout << "µÈ´ýÁ¬½Ó......" << std::endl;
+	std::cout << "ç­‰å¾…è¿žæŽ¥......" << std::endl;
 
 	isStart = true;
 
@@ -137,7 +137,7 @@ bool tcpServer::Creater(const char* locip, unsigned short locPort) {
 
 
 int tcpServer::Send(const char* tage, const char* content, int len) {
-	//·¢ËÍÊý¾Ý
+	//å‘é€æ•°æ®
 	auto miter = csgrp.find(tage);
 	if (miter == csgrp.end()) {
 		return 0;

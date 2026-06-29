@@ -1,4 +1,4 @@
-#include "QVideoEncoder.h"
+﻿#include "QVideoEncoder.h"
 
 //FFmpeg
 extern "C"

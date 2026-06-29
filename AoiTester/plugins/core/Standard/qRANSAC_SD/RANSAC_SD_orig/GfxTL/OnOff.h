@@ -1,4 +1,4 @@
-#ifndef GfxTL__ONOFF_HEADER__
+﻿#ifndef GfxTL__ONOFF_HEADER__
 #define GfxTL__ONOFF_HEADER__
 
 namespace GfxTL

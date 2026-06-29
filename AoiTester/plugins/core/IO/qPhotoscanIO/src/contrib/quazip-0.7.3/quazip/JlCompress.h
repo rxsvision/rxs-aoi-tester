@@ -1,4 +1,4 @@
-#ifndef JLCOMPRESSFOLDER_H_
+﻿#ifndef JLCOMPRESSFOLDER_H_
 #define JLCOMPRESSFOLDER_H_
 
 /*

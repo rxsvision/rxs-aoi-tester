@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qRDBIO" >
     <file>info.json</file>
   </qresource>

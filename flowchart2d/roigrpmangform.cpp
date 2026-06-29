@@ -1,4 +1,4 @@
-#include "roigrpmangform.h"
+﻿#include "roigrpmangform.h"
 #include "ui_roigrpmangform.h"
 
 roiGrpMangForm::roiGrpMangForm(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

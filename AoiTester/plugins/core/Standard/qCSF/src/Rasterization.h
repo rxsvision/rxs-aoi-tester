@@ -1,4 +1,4 @@
-//#######################################################################################
+ï»¿//#######################################################################################
 //#                                                                                     #
 //#                              CLOUDCOMPARE PLUGIN: qCSF                              #
 //#                                                                                     #
@@ -16,7 +16,7 @@
 //#  Zhang W, Qi J, Wan P, Wang H, Xie D, Wang X, Yan G. An Easy-to-Use Airborne LiDAR  #
 //#  Data Filtering Method Based on Cloth Simulation. Remote Sensing. 2016; 8(6):501.   #
 //#                                                                                     #
-//#                                     Copyright ©                                     #
+//#                                     Copyright Â©                                     #
 //#               RAMM laboratory, School of Geography, Beijing Normal University       #
 //#                               (http://ramm.bnu.edu.cn/)                             #
 //#                                                                                     #
@@ -43,7 +43,7 @@ public:
 	double static findHeightValByNeighbor(Particle *p, Cloth &cloth);
 	double static findHeightValByScanline(Particle *p, Cloth &cloth);
 
-	//¶ÔµãÔÆ½øĞĞ×îÁÙ½üËÑË÷£¬Ñ°ÕÒÖÜÎ§×î½üµÄN¸öµã  ±ÜÃâÇó½»ÔËËã
+	//Â¶Ã”ÂµÃ£Ã”Ã†Â½Ã¸ÃÃÃ—Ã®ÃÃ™Â½Ã¼Ã‹Ã‘Ã‹Ã·Â£Â¬Ã‘Â°Ã•Ã’Ã–ÃœÃÂ§Ã—Ã®Â½Ã¼ÂµÃ„NÂ¸Ã¶ÂµÃ£  Â±ÃœÃƒÃ¢Ã‡Ã³Â½Â»Ã”Ã‹Ã‹Ã£
 	static bool RasterTerrain(Cloth& cloth, const wl::PointCloud& pc, std::vector<double>& heightVal, unsigned KNN = 1);
 
 };

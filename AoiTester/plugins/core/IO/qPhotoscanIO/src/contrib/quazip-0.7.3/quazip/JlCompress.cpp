@@ -1,4 +1,4 @@
-/*
+﻿/*
 Copyright (C) 2010 Roberto Pompermaier
 Copyright (C) 2005-2014 Sergey A. Tachenov
 

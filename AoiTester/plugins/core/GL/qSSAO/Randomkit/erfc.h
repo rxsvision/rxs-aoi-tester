@@ -1,4 +1,4 @@
-#ifndef ERFC_HEADER
+﻿#ifndef ERFC_HEADER
 #define ERFC_HEADER
 
 /**************************

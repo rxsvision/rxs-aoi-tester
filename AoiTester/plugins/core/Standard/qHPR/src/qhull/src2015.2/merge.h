@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-merge.htm"
+﻿/*<html><pre>  -<a                             href="qh-merge.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    merge.h

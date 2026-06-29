@@ -1,4 +1,4 @@
-/*<html><pre>  -<a                             href="qh-qhull.htm"
+﻿/*<html><pre>  -<a                             href="qh-qhull.htm"
   >-------------------------------</a><a name="TOP">-</a>
 
    libqhull.h

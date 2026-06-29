@@ -1,4 +1,4 @@
-#include "pcpoaslform.h"
+﻿#include "pcpoaslform.h"
 #include "ui_pcpoaslform.h"
 
 pcPoaslForm::pcPoaslForm(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

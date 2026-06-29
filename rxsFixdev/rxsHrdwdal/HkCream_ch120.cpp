@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "rxsHrdwdal.h"
 #include "proteced.h"
 #include <stdio.h>

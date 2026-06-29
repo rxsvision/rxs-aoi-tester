@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 
 extern HrdWrkSyetemEnv hrdSyetemEnver;
 
@@ -250,7 +250,7 @@ short PointCouldBoundolStep::Run() {
 		char lr[2] = { 'L','R' };
 		rr.clear();
 		std::string fileds[] = { "ID","X","Y","Z" };
-		rr.SetFiled(fileds, 4, "¶ÔÆëÕÒµã");
+		rr.SetFiled(fileds, 4, "å¯¹é½æ‰¾ç‚¹");
 		int r = 0;
 		for (int x = 0; x < 2; x++) {
 			const CloudEntity* ce;

@@ -1,4 +1,4 @@
-#ifndef MiscLib__REFCOUNTPTR_HEADER__
+﻿#ifndef MiscLib__REFCOUNTPTR_HEADER__
 #define MiscLib__REFCOUNTPTR_HEADER__
 
 namespace MiscLib

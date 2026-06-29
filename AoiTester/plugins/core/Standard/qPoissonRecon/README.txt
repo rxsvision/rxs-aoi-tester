@@ -1,4 +1,4 @@
-Changes made to PoissonRecon 5.71 <http://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version5.71/> for compilation on Mac OS X 10.8:
+﻿Changes made to PoissonRecon 5.71 <http://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version5.71/> for compilation on Mac OS X 10.8:
 
 1) The header file "Time.h" causes problems because it gets confused with the standard time.h header file, so changed header and source name Time.[h|cpp] to poissonTime.[h|cpp]
 

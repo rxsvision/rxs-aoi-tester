@@ -1,4 +1,4 @@
-#include "Bitmap.h"
+﻿#include "Bitmap.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>

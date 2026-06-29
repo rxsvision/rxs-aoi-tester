@@ -1,4 +1,4 @@
-#include "motionopter.h"
+﻿#include "motionopter.h"
 #include "ui_motionopter.h"
 #include "qtimer.h"
 

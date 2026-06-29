@@ -1,4 +1,4 @@
-#include "private.h"
+ï»¿#include "private.h"
 
 #include "../dmtx/dmtx.h"
 #pragma comment(lib,"../dmtx/libdmtx.lib")
@@ -15,7 +15,7 @@ using namespace cv;
 
 std::vector<SCResult>	cv_wechat_qrdecode(rxsImg* in, unsigned num, bool roiEnb, rxsRectI roiArea, float scale) {
 
-	//¼ÓÔØÍ¼Æ¬½âÂë
+	//åŠ è½½å›¾ç‰‡è§£ç 
 	Ptr<wechat_qrcode::WeChatQRCode> detector;
 	std::string detect_prototxt = "E:/opencv-4.9.0/build/downloads/wechat_qrcode/detect.prototxt";
 	std::string detect_caffe_model = "E:/opencv-4.9.0/build/downloads/wechat_qrcode/detect.caffemodel";

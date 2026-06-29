@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
     <qresource prefix="/TestFiles">
         <file>Data/shp/line.shp</file>
         <file>Data/shp/linem.shp</file>

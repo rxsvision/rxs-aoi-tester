@@ -1,4 +1,4 @@
-#include "lambertianphotometricstereo.h"
+﻿#include "lambertianphotometricstereo.h"
 #include "ui_lambertianphotometricstereo.h"
 
 LambertianPhotometricStereo::LambertianPhotometricStereo(imgTaskFlowerProcesser *itfp,int curID,QWidget *parent) :

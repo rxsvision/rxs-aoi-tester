@@ -1,4 +1,4 @@
-
+﻿
 #ifndef CC_CORE_LIB_API_H
 #define CC_CORE_LIB_API_H
 

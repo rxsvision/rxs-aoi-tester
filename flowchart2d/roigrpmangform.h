@@ -1,4 +1,4 @@
-#ifndef ROIGRPMANGFORM_H
+﻿#ifndef ROIGRPMANGFORM_H
 #define ROIGRPMANGFORM_H
 
 #include <QWidget>

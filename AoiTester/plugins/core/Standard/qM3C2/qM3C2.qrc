@@ -1,4 +1,4 @@
-<RCC>
+﻿<RCC>
   <qresource prefix="/CC/plugin/qM3C2Plugin">
     <file>images/Logo_cnrs_eub_eec.png</file>
     <file>images/iconM3C2.png</file>

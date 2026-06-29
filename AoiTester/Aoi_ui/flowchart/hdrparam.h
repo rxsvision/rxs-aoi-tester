@@ -1,4 +1,4 @@
-#ifndef HDRPARAM_H
+﻿#ifndef HDRPARAM_H
 #define HDRPARAM_H
 
 #include <QWidget>

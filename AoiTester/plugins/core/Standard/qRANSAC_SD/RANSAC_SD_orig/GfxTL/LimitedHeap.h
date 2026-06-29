@@ -1,4 +1,4 @@
-#ifndef __GfxTL_LIMITEDHEAP_HEADER__
+﻿#ifndef __GfxTL_LIMITEDHEAP_HEADER__
 #define __GfxTL_LIMITEDHEAP_HEADER__
 #include <algorithm>
 #include <functional>

@@ -1,4 +1,4 @@
-#ifndef CANDIDATE_HEADER
+﻿#ifndef CANDIDATE_HEADER
 #define CANDIDATE_HEADER
 #include "ScoreComputer.h"
 #include <MiscLib/RefCountPtr.h>

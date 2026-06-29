@@ -1,4 +1,4 @@
-#include "SpherePrimitiveShapeConstructor.h"
+﻿#include "SpherePrimitiveShapeConstructor.h"
 #include "SpherePrimitiveShape.h"
 #include "ScoreComputer.h"
 #include <GfxTL/NullClass.h>

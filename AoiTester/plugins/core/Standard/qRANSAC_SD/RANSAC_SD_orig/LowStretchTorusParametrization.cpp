@@ -1,4 +1,4 @@
-#include "LowStretchTorusParametrization.h"
+﻿#include "LowStretchTorusParametrization.h"
 #include "Bitmap.h"
 
 #if !defined(_WIN32) && !defined(WIN32)

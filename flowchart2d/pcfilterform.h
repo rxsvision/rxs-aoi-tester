@@ -1,4 +1,4 @@
-#ifndef PCFILTERFORM_H
+﻿#ifndef PCFILTERFORM_H
 #define PCFILTERFORM_H
 
 #include <QWidget>
